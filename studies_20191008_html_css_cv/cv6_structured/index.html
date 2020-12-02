@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rafael Lapa Valgas</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="style/_reset.css">
+    <link type="text/css" rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+    <!-- 
+        This represent my first web project and I focus in CSS. 
+        In four days I did my finest to catch some the best practices in CSS. 
+        Now, I move to JavaEE and server-side. But I need focus on my master degree too :/      :)
+        So,
+                if (you_can_understand && like_this) { 
+                    return: you_can_hiring_me(please); 
+                } else {
+
+        Thank you by your time to look at this. I'll accept any suggestion. Bye bye. }
+                                                Rafael Lapa Valgas      26/09/2019         -->
+
+</head>
+
+<body onload="switchMenu('About')">
+    <header>
+        <section class="wrapper">
+            <section class="logo">
+                <!-- logo  -->
+                <div class="logo__content">
+                    <div class="logo__content logo__content--name">
+                        <h1>Rafael</h1>
+                    </div>
+                    <div class="logo__content logo__content--lastname">
+                        <h1>Lapa</h1>
+                        <h1>valgas</h1>
+                    </div>
+                    <!-- logo  -->
+            </section>
+            <section class="menu">
+                <!-- Menu -->
+                <div class="menu__content">
+                    <ul class="tablinks">
+                        <!-- Menu mobile appear -->
+                        <li class="tablinks__item tablinks__item--mobile open__menu" onclick="openMenu()">
+                            <p>☰ Menu</p>
+                        </li>
+                        <!-- Menu mobile appear -->
+                        <li class="tablinks__item tablinks__item--desktop" onclick="switchMenu('About')">
+                            <p>About</p>
+                        </li>
+                        <li class="tablinks__item tablinks__item--desktop" onclick="switchMenu('Curriculum')">
+                            <p>Curriculum</p>
+                        </li>
+                        <li class="tablinks__item tablinks__item--desktop" onclick="switchMenu('Programmer')">
+                            <p>Programmer</p>
+                        </li>
+                        <li class="tablinks__item tablinks__item--desktop" onclick=" switchMenu('Psychology') ">
+                            <p>Psychology</p>
+                        </li>
+                        <li class="tablinks__item tablinks__item--desktop" onclick="switchMenu('Music')">
+                            <p>Music</p>
+                        </li>
+                    </ul>
+                    <ul class="tablinks">
+                        <li class="tablinks__item tablinks__item--desktop tablinks__item--pink" onclick="switchMenu('Hobby')">
+                            <p>Hobby</p>
+                        </li>
+                    </ul>
+                    <!-- Menu mobile hidden -->
+                    <div id="mobile__menu" class="mobile__menu">
+                        <p href="javascript:void(0)" class="close__menu" onclick="closeMenu()">×</p>
+
+                        <ul class="mobile__menu__hidden">
+                            <li class="mobile__menu__hidden--active" onclick="switchMenu('About')">
+                                <p>About</p>
+                            </li>
+                            <li class="mobile__menu__hidden--active" onclick="switchMenu('Curriculum')">
+                                <p>Curriculum</p>
+                            </li>
+                            <li class="mobile__menu__hidden--active" onclick="switchMenu('Programmer')">
+                                <p>Programmer</p>
+                            </li>
+                            <li class="mobile__menu__hidden--active" onclick=" switchMenu('Psychology') ">
+                                <p>Psychology</p>
+                            </li>
+                            <li class="mobile__menu__hidden--active" onclick="switchMenu('Music')">
+                                <p>Music</p>
+                            </li>
+                            <li class="mobile__menu__hidden--active mobile__menu__hidden--pink" onclick="switchMenu('Hobby')">
+                                <p>Hobby</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Menu mobile hidden -->
+                </div>
+                <!-- Menu -->
+            </section>
+        </section>
+    </header>
+
+    <main>
+        <section class="wrapper">
+            <div id="About" class="tab__content">
+                <h3>Put the About content here!</h3>
+                <p>And here.</p>
+            </div>
+            <div id="Curriculum" class="tab__content">
+                <div class="about--i">
+
+                </div>
+                <div class="history">
+                    <section class="academic">
+                        <div class="academic__title">
+                            <h4>
+                                Academic
+                            </h4>
+                            <!-- end to presentation -->
+                        </div>
+                        <!-- start card -->
+                        <div class="academic__card" onclick="openCloseCard('00')">
+                            <!-- resume -->
+                            <section class="resume">
+                                <div class="resume__view resume__view--title ">
+                                    <h5>
+                                        Graduação em Licenciatura em Música
+                                    </h5>
+                                </div>
+                                <div class="resume__view resume__view--local ">
+                                    <p>
+                                        Universidade do Estado de Santa Catarina<span> - UDESC - DMU</span>
+                                    </p>
+                                </div>
+                                <div class="resume__lastline">
+                                    <div class="resume__view resume__view--data">
+                                        <p>
+                                            2010 ~ 2015
+                                        </p>
+                                    </div>
+                                    <div class="resume__view resume__view--status">
+                                        <p>
+                                            Abandono de curso.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- end to resume -->
+                            </section>
+                            <!-- detail -->
+                            <section class="detail" id="00">
+                                <section class="detail__resume">
+                                    <div class="detail__view detail__view--title ">
+                                        <h5>
+                                            Resume
+                                        </h5>
+                                    </div>
+                                    <div class="detail__view ">
+                                        <p>
+                                            Com objetivo de reunir minhas formações em um ponto comum busquei ingressar no mestrado profissional em informática em saúde. Aonde tenho estudado diferentes aplicações de tecnologias na área da saúde e a dimensão da complexidade que é informtizar a saúde.
+                                            o principal foco tem sido a aplicação de metodologias de bigdata e machine learning para a área da saúde mental.
+                                        </p>
+                                    </div>
+                                    <!-- detail topic -->
+                                </section>
+                                <!-- one -->
+                                <!-- topic -->
+                                <section class="detail__topics ">
+                                    <!-- topic -->
+                                    <div class="detail__topics__view detail__topics__view--title ">
+                                        <h6>
+                                            Pesquisa Neuropsicologia e bigdata
+                                        </h6>
+                                    </div>
+                                    <div class="detail__topics__view detail__topics__view--data">
+                                        <p>
+                                            2011 ~ 2012
+                                        </p>
+                                    </div>
+                                    <div class="detail__topics__view detail__topics__view--status">
+                                        <p>
+                                            Foi efetuada uma pesquisa trimestral sobre as aplicações de bigdata em Neuropsicologia.
+                                        </p>
+                                    </div>
+                                    <section class="topic__img">
+                                        <div class="topic__thumbnail" onclick="openCloseCard('00')">
+                                            <a href="#img1">
+                                                <img class="thumbnail " src="/_work/CV3/img/eu.jpg" alt=" ">
+                                            </a>
+                                        </div>
+                                        <div class="topic__thumbnail" onclick="openCloseCard('00')">
+                                            <a href="#img2">
+                                                <img class="thumbnail " src="/_work/CV3/img/zaps.png" alt=" ">
+                                            </a>
+                                        </div>
+                                        <div class="topic__thumbnail" onclick="openCloseCard('00')">
+                                            <a href="#img3">
+                                                <img class="thumbnail" src="/_work/CV3/img/github.jpg" alt=" ">
+                                            </a>
+                                        </div>
+                                        <a href="#_" class="lightbox" id="img1" onclick="openCloseCard('00')">
+                                            <img src="/_work/CV3/img/eu.jpg">
+                                        </a>
+                                        <a href="#_" class="lightbox" id="img2" onclick="openCloseCard('00')">
+                                            <img src="/_work/CV3/img/zaps.png">
+                                        </a>
+                                        <a href="#_" class="lightbox" id="img3" onclick="openCloseCard('00')">
+                                            <img src="/_work/CV3/img/github.jpg">
+                                        </a>
+                                        <!-- backup <section class="topic__img">
+                                                    <div class="topic__thumbnail" onclick="openCloseCard('00')">
+                                                        <img class="thumbnail " src="/_work/CV3/img/email.png" alt=" ">
+                                                    </div>
+                                                    <div class="topic__thumbnail">
+                                                        <img class="thumbnail " src="/_work/CV3/img/zaps.png" alt=" ">
+                                                    </div>
+                                                    <div class="topic__thumbnail ">
+                                                        <img class="thumbnail" src="/_work/CV3/img/github.jpg" alt=" ">
+                                                    </div> backup -->
+                                        <!-- end imgs -->
+                                    </section>
+                                    <!-- end topic -->
+                                </section>
+                                <!-- here insert another topic :: a pseudo end to topics -->
+                            </section>
+                            <!-- end to detail -->
+                    </section>
+                    <!-- end to card -->
+                    <section class="professional">
+                        <div class="professional__title">
+                            <h4>
+                                Professional
+                            </h4>
+                            <!-- end to presentation -->
+                        </div>
+                        <!-- start card -->
+                        <div class="professional__card" onclick="openCloseCard('0000')">
+                            <!-- resume -->
+                            <section class="resume">
+                                <div class="resume__view resume__view--title ">
+                                    <h5>
+                                        Operador de Som e Imagem
+                                    </h5>
+                                </div>
+                                <div class="resume__view resume__view--local ">
+                                    <p>
+                                        Tribunal de Contas de Santa Catarina<span> TCE/SC-</span>
+                                    </p>
+                                </div>
+                                <div class="resume__lastline">
+                                    <div class="resume__view resume__view--data">
+                                        <p>
+                                            2010 ~ 2015
+                                        </p>
+                                    </div>
+                                    <div class="resume__view resume__view--status">
+                                        <p>
+                                            Terceirizado pela Orsegups e Orbenk
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- end to resume -->
+                            </section>
+                            <!-- detail -->
+                            <section class="detail" id="0000">
+                                <section class="detail__resume">
+                                    <div class="detail__view detail__view--title ">
+                                        <h5>
+                                            Resume
+                                        </h5>
+                                    </div>
+                                    <div class="detail__view ">
+                                        <p>
+                                            Com objetivo de reunir minhas formações em um ponto comum busquei ingressar no mestrado profissional em informática em saúde. Aonde tenho estudado diferentes aplicações de tecnologias na área da saúde e a dimensão da complexidade que é informtizar a saúde.
+                                            o principal foco tem sido a aplicação de metodologias de bigdata e machine learning para a área da saúde mental.
+                                        </p>
+                                    </div>
+                                    <!-- detail topic -->
+                                </section>
+                                <!-- one -->
+                                <!-- topic -->
+                                <section class="detail__topics ">
+                                    <!-- topic -->
+                                    <div class="detail__topics__view detail__topics__view--title ">
+                                        <h6>
+                                            Padronização do arquivo fotográfico
+                                        </h6>
+                                    </div>
+                                    <div class="detail__topics__view detail__topics__view--data">
+                                        <p>
+                                            2018 ~ 2019
+                                        </p>
+                                    </div>
+                                    <div class="detail__topics__view detail__topics__view--status">
+                                        <p>
+                                            Foi efetuada organizado todo o acervo fotográfico.
+                                        </p>
+                                    </div>
+                                    <section class="topic__img">
+                                        <div class="topic__thumbnail" onclick="openCloseCard('0000')">
+                                            <a href="#img1">
+                                                <img class="thumbnail " src="/_work/CV3/img/eu.jpg" alt=" ">
+                                            </a>
+                                        </div>
+                                        <div class="topic__thumbnail" onclick="openCloseCard('0000')">
+                                            <a href="#img2">
+                                                <img class="thumbnail " src="/_work/CV3/img/zaps.png" alt=" ">
+                                            </a>
+                                        </div>
+                                        <div class="topic__thumbnail" onclick="openCloseCard('0000')">
+                                            <a href="#img3">
+                                                <img class="thumbnail" src="/_work/CV3/img/github.jpg" alt=" ">
+                                            </a>
+                                        </div>
+                                        <a href="#_" class="lightbox" id="img1" onclick="openCloseCard('0000')">
+                                            <img src="/_work/CV3/img/eu.jpg">
+                                        </a>
+                                        <a href="#_" class="lightbox" id="img2" onclick="openCloseCard('0000')">
+                                            <img src="/_work/CV3/img/zaps.png">
+                                        </a>
+                                        <a href="#_" class="lightbox" id="img3" onclick="openCloseCard('0000')">
+                                            <img src="/_work/CV3/img/github.jpg">
+                                        </a>
+                                        <!-- backup 
+                                        <section class="topic__proove ">
+                                            <div class="topic__imgs ">
+                                                <img class="topic__imgs--it " src="/_work/CV3/img/email.png" alt=" ">
+                                            </div>
+                                            <div class="topic__imgs ">
+                                                <img class="topic__imgs--it " src="/_work/CV3/img/zaps.png" alt=" ">
+                                            </div>
+                                            <div class="topic__imgs ">
+                                                <img class="topic__imgs--it " src="/_work/CV3/img/github.jpg" alt=" ">
+                                            -->
+                        </div>
+                        <!-- end imgs -->
+                        </section>
+                        <!-- end topic -->
+                        </section>
+                        <!-- here insert another topic :: a pseudo end to topics -->
+                        </section>
+                        <!-- end to detail -->
+                    </section>
+                    <!-- end to card -->
+                    </div>
+                </div>
+            </div>
+            <div id="Programmer" class="tab__content">
+                <h3>Put the Programmer content here!</h3>
+                <p>And here.</p>
+            </div>
+            <div id="Psychology" class="tab__content">
+                <h3>Put the Psychology content here!</h3>
+                <p>And here.</p>
+            </div>
+
+            <div id="Music" class="tab__content">
+                <h3>Put the Music content here!</h3>
+                <p>And here.</p>
+            </div>
+            <div id="Hobby" class="tab__content tab__content--hobby">
+                <h3>Put the Hobby content here!</h3>
+                <p>And here.</p>
+            </div>
+            <!-- content : is a wrapper inside de main-->
+        </section>
+    </main>
+    <footer>
+        <section class="wrapper">
+            <section class="social">
+                <div class="contact">
+                    <div class="contact__box">
+                        <!-- email -->
+                        <div class="contact__box">
+                            <a class="contact__box" href="lapavalgas@gmail.com ">
+                                <div class="contact__box contact__box--img">
+                                    <img src="img/email.png" alt="email ">
+                                </div><span class="contact__box contact__box--title">e-mail</span></a>
+                        </div>
+                    </div>
+                    <div class="contact__box">
+                        <!-- linkedin -->
+                        <div class="contact__box">
+                            <a class="contact__box" href="https://www.linkedin.com/in/lapavalgas/ ">
+                                <div class="contact__box contact__box--img">
+                                    <img src="img/linkedin.jpg" alt="email ">
+                                </div><span class="contact__box contact__box--title">linkedin</span></a>
+                        </div>
+                    </div>
+                    <div class="contact__box">
+                        <!-- lattes -->
+                        <div class="contact__box">
+                            <a class="contact__box" href="http://lattes.cnpq.br/9384866584126633 ">
+                                <div class="contact__box contact__box--img">
+                                    <img src="img/lattes.png" alt="email ">
+                                </div><span class="contact__box contact__box--title">lattes</span></a>
+                        </div>
+                    </div>
+                    <div class="contact__box">
+                        <!-- github -->
+                        <div class="contact__box">
+                            <a class="contact__box" href="https://github.com/lapavalgas ">
+                                <div class="contact__box contact__box--img">
+                                    <img src="img/github.png" alt="email ">
+                                </div><span class="contact__box contact__box--title">github</span></a>
+                        </div>
+                    </div>
+                    <div class="contact__box">
+                        <!-- zaps -->
+                        <div class="contact__box">
+                            <a class="contact__box" href="988351392 ">
+                                <div class="contact__box contact__box--img">
+                                    <img src="img/zaps.png" alt="email ">
+                                </div><span class="contact__box contact__box--title">whatsapp</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box__local">
+                    <p class="box__local--name">Rafael Lapa Valgas</p>
+                    <p class="box__local--local">São José, Santa Catarina, Brasil</p>
+                    <p class="box__local--data">09/2019</p>
+                    <p class="box__local--data--desktop">Setembro de 2019</p>
+                </div>
+            </section>
+        </section>
+
+    </footer>
+</body>
+
+</html>

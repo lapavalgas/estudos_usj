@@ -1,0 +1,35 @@
+<!-- img -->
+
+<!-- thumbnail -->
+
+<div class="topic__thumbnail" onclick="openCloseCard('{{resume.first.id}}')">
+
+    <a href="#{{imgs.url}}">
+
+        <img class="thumbnail " src="../img/{{imgs.url}}" alt=" ">
+
+    </a>
+
+</div>
+
+<!-- /thumbnail -->
+
+<!-- photo lightbox -->
+
+<a href="#_" class="lightbox" id="{{imgs.url}}" onclick="openCloseCard('{{resume.first.id}}')"
+
+    style="text-decoration: none; color:aliceblue">
+
+    <div style="background-color: rgba(0, 0, 0, 0.685); width: 100%; height: 100%;">
+
+        <img src="../img/{{imgs.url}}">
+
+        <div><p>{{imgs.description}}</p></div>
+
+    </div>
+
+</a>
+
+<!-- /photo lightbox -->
+
+<!-- /img -->

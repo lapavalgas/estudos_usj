@@ -1,0 +1,27 @@
+.hgroup{/*logo*/
+	background-color: white !important;	
+}
+
+.entry-header{/*header*/
+	display: none !important;
+}
+
+#page:before, 
+.sidebar-offcanvas, 
+#secondary{/*menu*/
+	background-color: #031358 !important;
+}
+
+#post-121{/*content*/
+	padding: 140px 0px !important
+}
+
+.site-info{/*footer*/
+	display:none !important;
+}
+
+/* mobile */
+
+.fa{
+	color: #031358 !important;
+}

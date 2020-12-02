@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Atividade06</string>
+    <string name="inputTotalCarrosVendidos">Total de carros vendidos...</string>
+    <string name="inputValorTotalVendas">Valor total das vendas...</string>
+    <string name="inputSalarioFixo">Valor do salario fixo...</string>
+    <string name="inputPercentualPorVenda">Valor comissão em %...</string>
+    <string name="btnCalcular">Calcular salario</string>
+    <string name="textResult">" "</string>
+</resources>

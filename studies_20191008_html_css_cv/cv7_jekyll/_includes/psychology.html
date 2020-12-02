@@ -1,0 +1,31 @@
+<section class="wrapper">
+
+    <!-- psychology -->
+
+    <section id="Psychology" class="tab__content psychology">
+        
+        <!-- psychology -->
+
+        {% for text in site.data.psychology %}
+
+            {% include text.html  %}
+    
+            <section class="wrapper__psycard">
+
+            {% for card in text.psycard %}
+
+                {% include card-psycard.html  %}
+
+            {% endfor %}
+
+            </section>
+
+        {% endfor %}
+
+        <!-- /psychology -->
+
+    </section>
+
+    <!-- /psychology -->
+
+</section>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<body>
+
+    <div ng-app="app" ng-controller="precoCtrl">
+
+        <h1>Preço: {{ preco | currency }}</h1>
+
+    </div>
+
+    <script>
+        var app = angular.module('app', []);
+        app.controller('precoCtrl', function ($scope) {
+            $scope.preco = 1245;
+        });
+    </script>
+
+    <p>formata em dinheiro.</p>
+
+</body>
+
+</html>

@@ -1,0 +1,349 @@
+/*grid**************************************/
+
+.page {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr auto auto;
+    grid-template-areas: 'h' 'm' 'f';
+    overflow: hidden;
+}
+
+header {
+    grid-area: h;
+    margin: 3px auto;
+    margin-top: 1em;
+    padding: 5px;
+    min-width: 75%;
+    max-width: 75%;
+    min-height: 140px;
+}
+
+main {
+    grid-area: m;
+    margin: 3px auto;
+    margin-bottom: 5px;
+    padding: 5px;
+    min-width: 75%;
+    max-width: 75%;
+}
+
+footer {
+    grid-area: f;
+    margin: 3px auto;
+    padding: 5px;
+    min-width: 75%;
+    max-width: 75%;
+}
+
+@media screen and (min-width: 1715px) {
+    .header {
+        min-width: 60%;
+        max-width: 60%;
+    }
+    .main {
+        min-width: 60%;
+        max-width: 60%;
+    }
+    .footer {
+        min-width: 60%;
+        max-width: 60%;
+    }
+}
+
+@media screen and (max-width: 1155px) {
+    .page {
+        display: none;
+    }
+}
+
+
+/*header**************************************/
+
+.header-box {
+    margin: 3px;
+    padding: 5px;
+    padding-left: 0px;
+}
+
+.box-logo {
+    margin: 3px;
+    padding: 5px;
+    border-bottom: dashed 1px dodgerblue;
+}
+
+
+/*
+.box-logo:hover {
+    border-bottom: solid 1px dodgerblue;
+}
+*/
+
+.box-logo>span {
+    width: 100%;
+    font-family: monospace;
+    letter-spacing: 1em;
+    font-size: 2em;
+}
+
+.box-logo>p {
+    width: 100%;
+    font-family: monospace;
+    letter-spacing: 1em;
+    font-size: 2em;
+}
+
+.box-menu {
+    padding-top: 0.25em;
+    display: flex;
+}
+
+.menu-list {
+    display: flex;
+}
+
+.list-link {
+    width: 6em;
+    height: 2em;
+    margin: 3px;
+    padding: 5px;
+    background-color: dodgerblue;
+}
+
+.hobby {
+    background-color: hotpink;
+}
+
+.list-link>a {
+    display: block;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    padding-top: 10%;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: monospace;
+    text-align: center;
+}
+
+.list-link:hover {
+    border-bottom: solid 2px hotpink;
+}
+
+.hobby:hover {
+    border-bottom: solid 2px dodgerblue;
+}
+
+.list-link>a:hover {
+    color: black;
+}
+
+.list-link:active {
+    background-color: azure;
+}
+
+
+/*main**************************************/
+
+.main-content {
+    max-width: 100%;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-a {
+    /*academic*/
+    width: 45%;
+    margin: 3px auto;
+    padding: 5px;
+}
+
+.academic-card {
+    width: 90%;
+    margin-top: 0px;
+    margin-bottom: -1px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: dashed 1px dodgerblue;
+}
+
+.academic-card .card-title .title {
+    width: 90%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 100%;
+}
+
+.academic-card .card-local .local {
+    width: 90%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-family: serif;
+    font-weight: normal;
+    font-size: 90%;
+}
+
+.academic-card .card-data .data {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-family: serif;
+    font-weight: normal;
+    font-size: 80%;
+}
+
+.academic-card .card-state .state {
+    width: 90%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-family: serif;
+    font-size: 80%;
+}
+
+.academic-card .card-state .state .bolder {
+    font-weight: bolder;
+    padding-right: 3px;
+}
+
+.academic-card:hover {
+    border-bottom: solid 1px dodgerblue;
+}
+
+.content-b {
+    /*about*/
+    width: 55%;
+    margin: 3px auto;
+    padding: 5px;
+}
+
+.content-about {
+    width: 100%;
+    padding: 5px;
+    padding-bottom: 15px;
+}
+
+.about-card .card-title .title {
+    padding-bottom: 5px;
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 160%;
+    letter-spacing: 1em;
+    padding-top: 10px;
+}
+
+.about-card .card-description .description {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: serif;
+    font-weight: normal;
+    font-size: 100%;
+    text-align: justify;
+}
+
+.content-experience {
+    width: 95%;
+    margin-top: 0px;
+    margin-bottom: -1px;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.experience-title {
+    padding-bottom: 5px;
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 115%;
+    letter-spacing: 0.5em;
+    padding-top: 10px;
+}
+
+.card-title .title {
+    width: 90%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 100%;
+}
+
+.card-local .local {
+    width: 90%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-family: serif;
+    font-weight: normal;
+    font-size: 90%;
+}
+
+.card-data .data {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-family: serif;
+    font-weight: normal;
+    font-size: 80%;
+}
+
+.card-description .description {
+    width: 90%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-family: serif;
+    font-size: 80%;
+}
+
+
+/*
+.main>h1 {
+    padding-bottom: 0.25em;
+    font-family: monospace;
+    letter-spacing: 0.65em;
+    font-size: 2em;
+}
+
+.main>p {
+    text-align: justify;
+    padding-bottom: 0.5em;
+}
+*/
+
+
+/*footer**************************************/
+
+.footer-color {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 30vh;
+    background-color: dodgerblue;
+}
+
+.footer-box {
+    margin: 3px auto;
+    padding: 5px;
+}
+
+.box-contact {
+    margin: 3px auto;
+    padding: 5px;
+}
+
+.box-contact>h1 {
+    padding-top: 0.25em;
+    font-family: monospace;
+    letter-spacing: 0.15em;
+    font-size: 1em;
+}
+
+
+/*
+@media screen and (max-width: 1366px) {
+    .header {
+        display: none;
+    }
+}
+*3

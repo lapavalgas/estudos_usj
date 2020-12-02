@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div ng-app="myApp" ng-controller="nomesCtrl">
+
+        <p>NG Repeat:</p>
+        <ul>
+            <li ng-repeat="carro in produtos | orderBy:'Preco'">
+                {{ carro.Nome + ', ' + carro.Preco + ', preço mutiplicado por cinco é = ' + (carro.Preco * 5)}}
+            </li>
+        </ul>
+
+    </div>
+
+    <script>
+        angular.module('myApp', []).controller('nomesCtrl', function ($scope) {
+            $scope.produtos = [
+                { Nome: 'Gol', Preco: 100000 },
+                { Nome: 'Fiat', Preco: 110000 },
+                { Nome: 'Chevrolet', Preco: 120000 },
+                { Nome: 'Uno', Preco: 150000 },
+                { Nome: 'Corola', Preco: 90000 },
+                { Nome: 'Kombi', Preco: 50000 },
+            ];
+        });
+    </script>
+
+</body>
+
+</html>

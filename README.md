@@ -1,1 +1,1 @@
-# estudos_usj
+Projetos e estudos no Centro Universitário Municipal de São José / USJ 

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Atividade10</string>
+    <string name="inputQntd">Qual a qntd em estoque?</string>
+    <string name="inputQntdMax">Digite a qntd max no estoque...</string>
+    <string name="inputQntdMin">Digite a qntd minima no estoque...</string>
+    <string name="btnCalcular">CALCULAR</string>
+    <string name="textResult">" "</string>
+</resources>

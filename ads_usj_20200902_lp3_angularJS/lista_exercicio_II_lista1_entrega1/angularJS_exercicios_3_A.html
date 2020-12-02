@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>exercicios</title>
+</head>
+
+<body>
+    <div ng-app="">
+        <div>
+            <p>Eleitores</p>
+            <div><label for="validos">Digite o número de votos validos</label>
+                <input ng-model="validos" type="number" name="validos" id="numero" value="0"></div>
+
+            <div> <label for="brancos">Digite o número de votos em brancoss</label>
+                <input ng-model="brancos" type="number" name="brancos" id="numero" value="0"></div>
+
+            <div> <label for="nulos">Digite o número de votos nulos</label>
+                <input ng-model="nulos" type="number" name="nulos" id="numero" value="0"></div>
+
+            <p>O total de votos é {{validos + brancos + nulos }} e representa 100% dos eleitores</p> 
+            <p>Os votos validos {{validos}} representam {{(100*validos)/(validos + brancos + nulos)}}% dos eleitores</p>
+            <p>Os votos brancos {{brancos}} representam {{(100*brancos)/(validos + brancos + nulos)}}% dos eleitores</p>
+            <p>Os votos nulos {{nulos}} representam {{(100*nulos)/(validos + brancos + nulos)}}% dos eleitores</p>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

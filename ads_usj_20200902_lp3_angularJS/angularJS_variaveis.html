@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<body>
+
+    <div ng-app="minhaApp" ng-controller="meuCtrl">
+        {{ firstName + " " + lastName }}
+    </div>
+
+    <script>
+        var app = angular.module("minhaApp", []);
+        app.controller("meuCtrl", function ($scope) {
+            $scope.firstName = "Carla";
+            $scope.lastName = "Sabrinaa";
+        });
+    </script>
+
+</body>
+
+</html>

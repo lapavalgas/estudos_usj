@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Atividade04</string>
+    <string name="textView" />
+    <string name="textResult">" "</string>
+    <string name="inputSalarioMensal">Informe o salario...</string>
+    <string name="inputAjuste">Informe o ajuste em %</string>
+    <string name="btnCalcular">Calcular reajuste</string>
+</resources>

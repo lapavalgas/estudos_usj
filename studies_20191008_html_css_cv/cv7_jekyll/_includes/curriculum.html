@@ -1,0 +1,33 @@
+<!-- curriculum -->
+
+<section class="wrapper">
+
+    <section id="Curriculum" class="tab__content">
+
+        <!-- about-i -->
+
+        {% for text in site.data.curriculum %}
+
+            {% include text.html  %}
+
+        {% endfor %}
+
+        <!-- /about-i -->
+
+        <!-- history -->
+
+        <div class="history">
+
+            {% include c0-academic.html %}
+
+            {% include c0-professional.html %}
+
+        </div>
+
+        <!-- /history -->
+
+    </section>
+
+</section>
+
+<!-- /curriculum -->

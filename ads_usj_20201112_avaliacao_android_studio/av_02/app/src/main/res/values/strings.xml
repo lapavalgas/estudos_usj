@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Atividade02</string>
+    <string name="inputAltura">Altura</string>
+    <string name="inputBase">Base</string>
+    <string name="btnCalcular">Calcular Área</string>
+    <string name="textResult" />
+</resources>

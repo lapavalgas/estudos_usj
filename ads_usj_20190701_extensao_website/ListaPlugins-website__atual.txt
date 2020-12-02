@@ -1,0 +1,38 @@
+wordpress plugins 
+-----------------
+
+
+Advanced Excerpt 	: diminuir o post e mum link para a postagem. Diminuindo o texto de apresentação. Requer pouco de comprepensão de PHP.
+
+Advanced iFrame 	: (iFrame, página dentro da outra, HTML); Carrega páginas dentro dos posts;
+
+Ajax Live Search 	: Searchbar
+
+All-in-One WP Migration	: Import or Export your blog
+
+Dynamic To Top		: Link para o topo da página!
+
+Elementor		: construir e organizar a página (Da de criar páginas interessantes!)
+
+Export Featured Images	: exportação de termos e categorias para outros sites
+
+F. Regenerate Thumbnail : imagens no meio do post com tamanho não muito grande ou reduzido.
+
+Gallery Bank L. Edition : ter uma galeria de imiagens responsivas utilizando wordpress. //Envira Gallery
+
+off] Google Analytics Dashboard for WP (GADWP) 
+
+Google News Just Better	: descontinuado // [RSS just better](http://wordpress.org/extend/plugins/rss-just-better/) 
+
+Image Widget		: permite por imagens em menus, headers e footers
+
+Importador do WordPress : exporta configurações conteúdo do site;
+
+off] JackBox		: imagens thumbnails que surgem na tela.
+
+Limit Login Attempts Reloaded : melhora tela de autenticação com padroes de seguranças
+
+Mango Buttons		: 
+
+
+

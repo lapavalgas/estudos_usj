@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Atividade03</string>
+    <string name="inputMunicipio">Nº eleitores do municipio</string>
+    <string name="inputBrancos">Votos em branco</string>
+    <string name="inputNulo">Votos em nulo</string>
+    <string name="inputValido">Votos valido</string>
+    <string name="btnCalcular">Calcular votos</string>
+    <string name="textResult" />
+</resources>

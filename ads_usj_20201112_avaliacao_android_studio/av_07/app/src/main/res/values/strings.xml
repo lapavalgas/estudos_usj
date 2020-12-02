@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Atividade07</string>
+    <string name="inputNumeroHoraTrabalhadas">Quantidade de horas trabalhadas...</string>
+    <string name="inputSalarioPorHora">Qual o salario por hora?</string>
+    <string name="btnCalcular">CALCULAR SALARIO DO TRABAIADO</string>
+    <string name="textResult">" "</string>
+</resources>

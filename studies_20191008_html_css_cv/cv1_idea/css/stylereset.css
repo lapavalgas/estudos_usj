@@ -1,0 +1,72 @@
+html,
+body,
+ul,
+li {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    font-family: arial;
+}
+
+#page {
+    display: grid;
+    grid-template-columns: 340px 580px 340px;
+    grid-template-rows: 120px auto auto;
+    grid-template-areas: " headera headerb headerc" "contact content right" "footer footer footer";
+}
+
+
+/* config */
+
+.header-a {
+    grid-area: headera;
+    background-color: white;
+}
+
+.header-b {
+    grid-area: headerb;
+    background-color: white;
+}
+
+.header-c {
+    grid-area: headerc;
+    background-color: white;
+}
+
+
+/* header */
+
+.contact-menu {
+    grid-area: contact;
+    background-color: white;
+}
+
+
+/* contact */
+
+.content {
+    grid-area: content;
+    background-color: white;
+    max-width: 1000px;
+}
+
+
+/* content */
+
+.right-menu {
+    grid-area: right;
+    background-color: white;
+}
+
+
+/* right menu */
+
+.footer {
+    grid-area: footer;
+    min-height: 120px;
+    background-color: white;
+    border-style: dotted;
+}
+
+
+/* footer */

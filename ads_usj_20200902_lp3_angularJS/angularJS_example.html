@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<body>
+    <div ng-app="">
+        <p>Nome: <input type="text" ng-model="nomes"></p>
+        <p>Telefone: <input type="text" ng-model="fone"></p>
+        <p ng-bind="nomes"></p>
+        <p ng-bind="fone"></p>
+        <p>{{nomes}} - {{fone}} - {{10 + 10}}</p>
+    </div>
+</body>
+
+</html>

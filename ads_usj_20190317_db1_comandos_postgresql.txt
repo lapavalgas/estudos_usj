@@ -1,0 +1,89 @@
+
+Comandos 1
+SELECT version(); //verifica versão
+
+
+Comandos 2
+CREATE DATABASE [nome];  //cria database
+pg_restore -U postgres -d dvdrental C:\..\[nome].tar //restaura uma base de dados
+SELECT * FROM actor; //* means all
+
+
+Comandos 3
+Tablespace //local aonde é armazenada informações do banco de dados (não do SGBD, nemda versão do SGBD).
+Pg_default //users
+Pg_global //sistem
+
+Comandos 4
+Views //tabelas relacionais
+Functions //blocos de códigos repetitivos no decorrer do tempo a serem executadas.
+Cast // converte data type into another, used with functions, pode criar custom casts to override the default
+Operators // a kind of simbolic function
+Sequences // manage or incremant columns (//em um forum: Generates primary key values
+Extensions // wrap other objects into a single unit
+
+Comandos 5
+database // organized collection of data
+table // is collection of related data entries and it consist of columns and rows.
+Column // set of data values in a table.
+Row // a record in a table;
+Schema // schema is a collection of database object
+// Object // is any defined object in adatabase that is usede to store or reference data. can be used to hold and manipulate the data.
+// indesx // improves the performance of some queries
+// synonym // alternative name for an objetc
+Primary Key // unique identifier, such as a driver license number
+Foregein Key // used to reference a primary key in a another table.
+RDBMS // relational database Management System (SGBD para  SQL relacional)
+
+Comandos 6
+Boolean (true, false, null)
+Character, (char, varchar, text), 
+Number:
+	integers (smallint, int, serial // serial auto-increment id/primary key)
+	floating (float, real or float8, numeric or numeric(p,s)
+temporal data type
+	data // data
+	time // tempo
+	timestamp // datatime
+	interval // periodos de tempo
+	timestamptz //datatime + timezone data
+Special data time
+	box (retangular box)
+	line (a et of points)
+	point (a gemoetric pair of numbers)
+	Iseg (a line segment)
+	polygon (a closed geometric)
+	inet (an IP4 adress)
+	macaddr (a MAC adress)
+Array data type
+	strings or integers
+
+
+Comandos 7
+// constraints //
+UNIQUE // cada registro será unico, pode ser 1 coluna ou varias.
+
+COMANDOS 8
+WHERE // filtra rows returned from SELECT query
+Syntax: 
+	SELECT [columns1, columns2, ou * (para tudo)]
+	FROM [table]
+	WHERE [condições]
+		AND, OR, <>=
+DISTINCT // remove duplicate records
+syntax:
+	SELCT DISTINCT (column1, column2 ou *)
+	FROM
+	WHERE
+ORDER BY // organiza dados 
+syntax:
+	SELECT
+	FROM
+	ORDER BY
+	Colum1 ASC // ascendente
+	Colum2 DESC, // descendente
+
+
+ 
+
+

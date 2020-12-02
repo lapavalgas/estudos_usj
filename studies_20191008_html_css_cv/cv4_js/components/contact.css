@@ -1,0 +1,76 @@
+/************************************
+    contact component: v1
+*************************************/
+
+
+/************************************
+    Evolução:
+    1. link no icone
+    2. div hotpink à esquerda
+    3. formulário para e-mail/contato
+*************************************/
+
+
+/************************************
+    .contact
+*************************************/
+
+.contact {
+    min-width: 240px;
+    max-width: 240px;
+    margin: auto;
+    border-left: 2px dashed hotpink;
+}
+
+.contact__box {
+    margin: 1px;
+    padding: 4px;
+    display: flex;
+}
+
+.contact__box:hover {
+    background-color: hotpink;
+}
+
+.contact__box>a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.contact__box--img {
+    min-width: 24px;
+    min-height: 24px;
+    max-width: 24px;
+    max-height: 24px;
+    overflow: hidden;
+}
+
+.contact__box--img>img {
+    min-width: 24px;
+    min-height: 24px;
+    max-width: 24px;
+    max-height: 24px;
+}
+
+.contact__box--title {
+    width: 100%;
+    height: 100%;
+    margin: 1px;
+    padding-left: 8px;
+    padding-top: 8px;
+    text-decoration: none;
+    font-family: monospace;
+}
+
+
+/************************************
+    presentation
+*************************************/
+
+.estrutura {
+    padding-top: 100px;
+    background-color: dodgerblue;
+    height: 100vh;
+}

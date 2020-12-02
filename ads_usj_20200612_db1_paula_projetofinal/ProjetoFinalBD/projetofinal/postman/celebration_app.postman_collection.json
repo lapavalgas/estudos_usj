@@ -1,0 +1,501 @@
+{
+	"info": {
+		"_postman_id": "a9bd20ec-5798-4408-b654-990324f7d08e",
+		"name": "celebration_app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1  - /login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "cpf",
+							"value": "10000000000",
+							"type": "text"
+						},
+						{
+							"key": "nome",
+							"value": "teste1",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "teste1",
+							"disabled": true
+						},
+						{
+							"key": "cpf",
+							"value": "10000000000",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Go home,\r\nLogin,\r\nCookies\r\n\r\n// JSON : { \"pessoa.nome\":\"nome\",\"pessoa.cpf\":\"00000000000\"}"
+			},
+			"response": []
+		},
+		{
+			"name": "2 - /logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/logout",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"logout"
+					]
+				},
+				"description": "Logout,\r\nKill cookie\r\n\r\n{\r\n    \"cpf\":\"00000000000\"\r\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "3 - /eventos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "pessoa.nome",
+						"value": "Rafael",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "pessoa.cpf",
+						"value": "00000000010",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/eventos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"eventos"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "rafael",
+							"disabled": true
+						},
+						{
+							"key": "cpf",
+							"value": "00000000000",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Go home,\r\nCarrega Eventos"
+			},
+			"response": []
+		},
+		{
+			"name": "4 - /eventos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "local",
+							"value": "Meu primeiro evento de teste 2",
+							"type": "text"
+						},
+						{
+							"key": "data",
+							"value": "2020-10-20",
+							"type": "text"
+						},
+						{
+							"key": "nome",
+							"value": "Festa Pandemia 2",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/eventos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"eventos"
+					]
+				},
+				"description": "Cadastra evento"
+			},
+			"response": []
+		},
+		{
+			"name": "5 - /eventos/{codigo}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/eventos/11",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"eventos",
+						"11"
+					]
+				},
+				"description": "Carrega dados evento"
+			},
+			"response": []
+		},
+		{
+			"name": "6 - /eventos/{codigo}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "local",
+							"value": "São José do Kobrasol",
+							"type": "text"
+						},
+						{
+							"key": "data",
+							"value": "2020-10-11",
+							"type": "text"
+						},
+						{
+							"key": "nome",
+							"value": "Festa do Kobrasol",
+							"type": "text"
+						},
+						{
+							"key": "descricao",
+							"value": "Festa pósdemi",
+							"type": "text"
+						},
+						{
+							"key": "codigo",
+							"value": "15",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/eventos/12",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"eventos",
+						"12"
+					]
+				},
+				"description": "atualiza evento"
+			},
+			"response": []
+		},
+		{
+			"name": "7 - /eventos/{codigo}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/eventos/15",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"eventos",
+						"15"
+					]
+				},
+				"description": "deleta evento"
+			},
+			"response": []
+		},
+		{
+			"name": "9 - /eventos/{codigo}/itens",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/eventos/1/itens",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"eventos",
+						"1",
+						"itens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10 /eventos/{codigo}/itens",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nomeItem",
+							"value": "dog-do-tio",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/eventos/1/itens",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"eventos",
+						"1",
+						"itens"
+					]
+				},
+				"description": "criar item"
+			},
+			"response": []
+		},
+		{
+			"name": "13 /eventos/{codigo}/itens/{nomeItem}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/eventos/1/itens/magoo",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"eventos",
+						"1",
+						"itens",
+						"magoo"
+					]
+				},
+				"description": "remover item"
+			},
+			"response": []
+		},
+		{
+			"name": "11 /eventos/{codigo}/convidados",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/eventos/1/convidados",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"eventos",
+						"1",
+						"convidados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "12 /eventos/{codigo}/convidados",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "cpfConvidado",
+							"value": "00001000001",
+							"type": "text"
+						},
+						{
+							"key": "nomeConvidado",
+							"value": "teste2",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/eventos/1/convidados",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"eventos",
+						"1",
+						"convidados"
+					]
+				},
+				"description": "remove convidado"
+			},
+			"response": []
+		},
+		{
+			"name": "13 /eventos/{codigo}/convidados/{cpf}/confirmar/{boolean}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/eventos/1/convidados/10000000000/confirmar/true",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"eventos",
+						"1",
+						"convidados",
+						"10000000000",
+						"confirmar",
+						"true"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "14 /eventos/{codigo}/convidados/{cpf}/itens/{nomeItem}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/eventos/1/convidados/10000000000/itens/dog-do-tio",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"eventos",
+						"1",
+						"convidados",
+						"10000000000",
+						"itens",
+						"dog-do-tio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "15 /eventos/{codigo}/convidados/{cpf}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/eventos/1/convidados/12345678909",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"eventos",
+						"1",
+						"convidados",
+						"12345678909"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "1bc50e27-e2ad-459c-854d-d7dc53bf03b0",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "8a39e999-c4dd-4316-9cd3-dfb7dac02fa7",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

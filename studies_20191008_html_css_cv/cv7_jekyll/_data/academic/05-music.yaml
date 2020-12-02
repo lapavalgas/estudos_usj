@@ -1,0 +1,106 @@
+- title: Graduação em Licenciatura em Música
+  local: Universidade do Estado de Santa Catarina
+  sigla: UDESC
+  time: 2010 ~ 2015
+  status: Abandono de curso.
+  resume: Com intuito de ingressar no ensino superior e formalizar meus estudos de música iniciei o curso de licenciatura em música, sempre ciente de que não seria minha única formação, tinha interesse em aprofundar meus conhecimentos em música e piano. Foi um período de grande aprendizagem, em parte por aprofundar os conhecimentos em música, mas também devido a ênfase do curso em pedagogia e educação musical. Foi o momento em que tive o primeiro contato com as neurociências e a carreira acadêmica. Nesse período participei de monitorias, dos estágios e de diferentes cursos para aperfeiçoar as técnicas instrumentais e de edição de áudio. O abandono do curso ocorreu devido às prioridades com minha formação em psicologia e após um período de afastamento instrumental por uma lesão inflamatória.
+  id: music
+  
+  topics:
+    - title: 'Estágio obrigatório: Escola Livre de Música' 
+      sigla: ELM
+      time: 2014 ~ 2014
+      resume: Em conjunto do colega Emanuel de Souza Pereira, e orientado pelas professoras Gislane Natera, UDESC, e Maria Inês Hartt, ELM, responsável pelo planejamento das aulas de musicalização infantil, para crianças pré-escolares, com o objetivo de introduzir as propriedades do som através de utilizando ritmos brasileiro. 
+      imgs:
+        - url: ''
+          description: 
+
+        - url: ''
+          description:  
+
+        - url: ''
+          description:
+ 
+    - title: 'Estágio obrigatório: Instituto Federal de Santa Catarina'
+      sigla: 2013
+      time: 2013 ~2013
+      resume: Em conjunto da colega Alana Amancio da Silva, e orientado pelas professoras Cecília Marcon Pinheiro Machado, UDESC, e Ramiro Antonio da Costa, IFSC, responsável pelo planejamento das aulas de musicalização, para adolescentes do terceiro ano do ensino médico, com o objetivo de introduzir as formas com que a música pode ser compreendida enquanto uma linguagem.
+      imgs:
+        - url: 05-ELM-01.JPG
+          description: Estudo de percepção de sons ambientes, da cidade a natureza
+
+        - url: 05-ELM-02.JPG
+          description: Exploração instrumental e estudo de ritmos do baião 
+
+        - url: ''
+          description: 
+ 
+    - title:  'Monitor: Disciplina de Harmonia e Contraponto' 
+      sigla: UDESC
+      time: 2013 ~ 2014
+      resume: Orientado pelo professor Luigi Antonio Irlandini, responsável pela correção das listas de exercícios e por auxiliar os alunos com dificuldade nos conceitos e procedimentos da disciplina.
+      imgs:
+        - url: 05-UDESC-01.JPG
+          description: Corrigindo alguns exercícios de harmonia e contraponto, na UDESC.
+
+        - url: ''
+          description:  
+
+        - url: ''
+          description:
+ 
+    - title:  'Monitor: Orquestra escola do FIC' 
+      sigla: IFSC
+      time: 2013 ~ 2013
+      resume: Orientado pelos professores Irineu Lopes Melo e Ramiro Antonio da Costa, responsável em documentar digitalmente os arranjos e auxiliar os colegas da orquestra com dificuldades em teoria e percepção musical.
+      imgs:
+        - url: ''
+          description: 
+
+        - url: ''
+          description:  
+
+        - url: ''
+          description:
+ 
+    - title: 'Curso: Orquestra escola do FIC'
+      sigla: IFSC
+      time: 2013 ~ 2013
+      resume: Aluno do curso da Orquestra escola do FIC no IFSC, orientado pelo professor Irineu Lopes Melo, participando da orquestra para apreender os instrumentos de sopro trompete e flauta. 
+      imgs:
+        - url: ''
+          description: 
+
+        - url: ''
+          description:  
+
+        - url: ''
+          description:
+ 
+    - title:  'Curso: Piano na escola Opus'
+      sigla: OPUS
+      time: 2009 ~ 2010
+      resume: Aluno do curso de piano na escola Opus Espaço Cultural, antigo Conservatório Musical de Florianópolis, orientado pelo professor Vanderlei Jochem, participando de todos os cursos musicais oferecidos pela escola no decorrer desse período. Foi um período de amadurecimento da técnica prática ao piano.
+      imgs:
+        - url: 05-OPUS-01.JPG
+          description: A sala em que estudei piano por muitos anos, na escola Opus espaço cultural (o antigo conservatório musical de Florianópolis)
+
+        - url: ''
+          description:  
+
+        - url: ''
+          description:
+ 
+    - title: 'Curso: Piano na escola Sol Maior'
+      sigla: ''
+      time: 2005 ~ 2008
+      resume: Aluno do curso de piano na escola Som Maior, orientado pela professora Denise, participando de todos os cursos musicais oferecidos pela escola. Foi o período de musicalização e o primeiro contato com a prática instrumental.
+      imgs:
+        - url: ''
+          description: 
+
+        - url: ''
+          description:  
+
+        - url: ''
+          description:

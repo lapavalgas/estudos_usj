@@ -1,0 +1,61 @@
+<span>--------------------------------------</span>
+<span>--------------------------------------</span>
+<span>--------------------------------------</span>
+<span>--------------------------------------</span>
+
+<!-- professional -->
+
+<div style="background-color: burlywood;">
+    {% for document in site.data.professional %}
+    <p style="background-color: antiquewhite;">{{forloop.index()}}</p>
+    {% for resume in document %}
+    <p style="background-color: aquamarine;">
+        {{forloop.index()}} <br>
+        {{resume.first.title}} <br>
+        {{resume.first.local}} <br>
+        {{resume.first.sigla}} <br>
+        {{resume.first.time}} <br>
+    </p>
+    {% for topics in resume.first.topics %}
+    <p style="background-color: aqua;">
+        {{forloop.index()}} <br>
+        {{topics.title}} <br>
+        {{topics.sigla}} <br>
+        {{topics.time}} <br>
+        {{topics.resume}} <br>
+    </p>
+    {%endfor%}
+    {%endfor%}
+    {%endfor%}
+</div>
+
+<!-- professional -->
+
+<!-- academic -->
+
+{% for document in site.data.academic %}
+<p style="background-color: antiquewhite;">{{forloop.index()}}</p>
+{% for resume in document %}
+<p style="background-color: aquamarine;">
+    {{forloop.index()}} <br>
+    {{resume.first.title}} <br>
+    {{resume.first.local}} <br>
+    {{resume.first.sigla}} <br>
+    {{resume.first.time}} <br>
+</p>
+{% for topics in resume.first.topics %}
+<p style="background-color: aqua;">
+    {{forloop.index()}} <br>
+    {{topics.title}} <br>
+    {{topics.sigla}} <br>
+    {{topics.time}} <br>
+    {{topics.resume}} <br>
+</p>
+{%endfor%}
+{%endfor%}
+{%endfor%}
+
+<!-- academic -->
+
+
+<br> <span> --------------- </span>

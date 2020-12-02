@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<body>
+
+    <ul ng-app="myApp" ng-controller="nomesCtrl">
+        <li ng-repeat="x in nomes">
+            {{x | formatar}}
+        </li>
+    </ul>
+
+    <script>
+        var app = angular.module('myApp', []);
+        app.filter('formatar', function () {
+            return function (x) {
+                var i, c, txt = "";
+                for (i = 0; i < x.length; i++) {
+                    c = x[i];
+                    if (i % 2 == 0) {
+                        c = c.toUpperCase();
+                    }
+                    txt += c;
+                }
+                return txt;
+            };
+        });
+        app.controller('nomesCtrl', function ($scope) {
+            $scope.nomes = [
+                'Carlos',
+                'Paulo',
+                'Juliana',
+                'Hebe',
+                'Pablo',
+                'Corinthias',
+                'Avai',
+                'Suzana',
+                'Fernanda'
+            ];
+        });
+    </script>
+</body>
+
+</html>

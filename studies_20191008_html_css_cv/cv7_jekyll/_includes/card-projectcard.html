@@ -1,0 +1,57 @@
+<!-- projectcard -->
+
+<div class="projectcard">
+
+    <div class="wrapper__projectcard--data">
+
+        <div class="projecard__info">
+
+            <div class="text__title text__title--programmer">
+
+                <h4>{{card.title}}</h4>
+
+            </div>
+
+            <div class="detail__view detail__view--programmer">
+
+                    <p>{{card.status}}</p>
+
+            </div>
+
+            <div class="detail__view detail__view--programmer">
+
+                <p>{{card.technology}}</p>
+
+            </div>
+
+            <div class="detail__view detail__view--programmer">
+
+                <p>{{card.description}}</p>
+
+            </div>
+
+        </div>
+
+        <div class="topic__img topic__img--projectcard">
+
+            <!-- FOR LOOP LENGTH IMG -->
+
+            {% for imgs in card.imgs %}
+
+                {% if imgs.url != '' %}
+
+                    <div>{% include card-projectcard-img.html imgs="imgs" %}</div>
+
+                {% endif %}
+
+            {% endfor %}
+
+            <!-- ENDFOR LOOP LENGTH IMG -->
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- /projectcard -->

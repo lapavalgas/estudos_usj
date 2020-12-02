@@ -1,0 +1,137 @@
+.estrutura {
+    width: 40%;
+    margin: 3px auto;
+    padding: 5px;
+}
+
+
+/*****************************
+    ACADEMIC COMPONENT: v1
+*****************************/
+
+
+/*****************************
+    Evolução:
+    1. refatorar para remover os margin e padding redundantes
+    2. melhorar o layout responsivo
+*****************************/
+
+
+/*****************************
+    ACADEMIC__VIEW
+
+    Essa versão apresenta cartões sombreados.
+    Tem a versão com bordas dashed azul.
+
+*****************************/
+
+.professional {
+    margin: 3px;
+    padding: 5px;
+    max-width: 520px;
+    min-width: 520px;
+    /*height: 100px;  apresentação inicial */
+    padding: 5px;
+    font-family: serif;
+    font-size: 0.95em;
+    text-align: justify;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 8px;
+}
+
+.professional:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.professional__view {
+    margin: 3px;
+    padding: 5px;
+}
+
+.professional__view__title {
+    margin: 3px;
+    padding: 3px;
+    font-size: 1.1em;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.professional__view__local {
+    margin: 3px;
+    padding: 3px;
+}
+
+.professional__view__data {
+    margin: 3px;
+    padding: 3px;
+}
+
+.professional__view__status {
+    margin: 3px;
+    padding: 3px;
+}
+
+
+/*****************************
+    ACADEMIC__RESUME
+
+    Essa estrutura deverá ser apresentada oculta, 
+    clicar em __view deverá apresentar em dropdown o __resume.
+
+*****************************/
+
+.professional__resume {
+    margin: 3px;
+    padding: 5px;
+    /*display: none; apresentação inicial */
+}
+
+.professional__resume:active {
+    display: none;
+}
+
+.professional__resume__title {
+    margin: 3px;
+    padding: 3px;
+    font-size: 1.1em;
+    font-family: monospace;
+    font-weight: bold;
+    border-bottom: solid 1px;
+}
+
+.professional__resume__text {
+    margin: 3px;
+    padding: 3px;
+    line-height: 115%;
+}
+
+.professional__topic {
+    margin: 3px;
+    padding: 5px;
+}
+
+.professional__topic__title {
+    margin: 3px;
+    padding: 3px;
+    font-family: monospace;
+    font-size: 1.1em;
+    font-weight: bold;
+    line-height: 50%;
+}
+
+.professional__topic__data {
+    margin: 3px;
+    padding: 3px;
+    line-height: 50%;
+}
+
+.professional__topic__resume {
+    margin: 3px;
+    padding: 3px;
+    line-height: 90%;
+}
+
+
+/*****************************
+    EXEMPLOS: DELETAR
+*****************************/

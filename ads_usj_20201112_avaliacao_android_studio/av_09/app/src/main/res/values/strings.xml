@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Avaliação09</string>
+    <string name="inputNumeroConta">Digite o número da conta...</string>
+    <string name="inputSaldo">Digite o saldo da conta...</string>
+    <string name="inputDebito">Digite o debito da conta...</string>
+    <string name="inputCredito">Digite o credito na conta...</string>
+    <string name="btnCalcular">CALCULAR SALDO</string>
+    <string name="textResult">" "</string>
+</resources>

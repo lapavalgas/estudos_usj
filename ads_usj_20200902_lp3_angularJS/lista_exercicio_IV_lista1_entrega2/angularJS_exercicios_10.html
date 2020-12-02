@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>exercicios</title>
+</head>
+
+<body ng-app="app">
+
+    <div ng-controller="mCtrl">
+
+        <div>
+            <label for="estoque">Quantidade atual em estoque de Band-Aid</label>
+            <input ng-model="estoque" type="number" name="estoque" value="0">
+        </div>
+
+        <div>
+            <label for="maximo">Quantidade máxima de Band-Aid no estoque</label>
+            <input ng-model="maximo" type="number" name="maximo" value="0">
+        </div>
+
+        <div>
+            <label for="minimo">Quantidade minima de Band-Aid no estoque</label>
+            <input ng-model="minimo" type="number" name="minimo" value="0">
+        </div>
+
+        <div id="texto" style="display: none;">
+            <p>{{msg}}.</p>
+        </div>
+
+        <button ng-click="calcular()"> Calcular </button>
+
+    </div>
+
+
+    <script>
+        var app1 = angular.module("app", []);
+
+        app1.controller("mCtrl", function ($scope) {
+
+            $scope.calcular = function () {
+
+                var qntdMedia 
+                = ($scope.maximo + $scope.minimo) / 2 ;
+
+                if ($scope.estoque >= qntdMedia ) {
+                    $scope.msg = 'não efetuar compra';
+                } else {
+                    $scope.msg = 'efetuar compra';
+                }
+
+
+                document.getElementById("texto").style.display = "inline";
+            }
+
+        });
+
+    </script>
+</body>
+
+</html>

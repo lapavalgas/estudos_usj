@@ -1,0 +1,1 @@
+[link referencia de angularJS](https://docs.angularjs.org/api/ng/filter)

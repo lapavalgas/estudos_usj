@@ -1,0 +1,83 @@
+<!-- resume -->
+
+<section class="resume">
+
+<!-- card presentation -->
+
+    <div class="resume__view resume__view--title ">
+
+        <h5>{{resume.first.title}}</h5>
+
+    </div>
+
+    <div class="resume__view resume__view--local ">
+
+        <p>{{resume.first.local}} <span> {{resume.first.sigla}} </span></p>
+
+    </div>
+
+    <div class="resume__lastline">
+
+        <div class="resume__view resume__view--data">
+
+            <p>{{resume.first.time}}</p>
+
+        </div>
+
+        <div class="resume__view resume__view--status">
+
+            <p>{{resume.first.status}}</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- /card presentation -->
+
+<!-- detail -->
+
+<section class="detail" id="{{resume.first.id}}">
+
+    <!-- detail basic -->
+
+    <section class="detail__resume">
+
+        <div class="detail__view detail__view--title ">
+
+            <h5>Resume</h5>
+
+        </div>
+
+        <div class="detail__view ">
+
+            <p>{{resume.first.resume}}</p>
+
+        </div>
+
+    </section>
+
+    <!-- /detail basic -->
+
+    <!-- topics loop -->
+
+    {% for topics in resume.first.topics %}
+
+        {% if resume.first.title == '' %}
+
+        {% else %}
+
+            {% include c2-topics.html topics="topics" %}
+
+        {% endif %}
+
+    {%endfor%}
+
+    <!-- /topics loop -->
+
+</section>
+
+<!-- /detail -->
+
+<!-- /resume -->

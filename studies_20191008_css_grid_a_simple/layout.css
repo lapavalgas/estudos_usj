@@ -1,0 +1,52 @@
+/******************************
+    GRID STUDY
+*******************************/
+
+body {
+    background-color: aliceblue;
+    /*avoid user selection*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+page {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr auto auto;
+    grid-template-areas: 'h' 'm' 'f';
+    overflow: hidden;
+    border: 1px solid;
+}
+
+header {
+    grid-area: h;
+    margin: 3px auto;
+    margin-top: 1em;
+    padding: 5px;
+    min-width: 65%;
+    max-width: 65%;
+    min-height: 140px;
+    border: 1px solid;
+}
+
+main {
+    grid-area: m;
+    margin: 3px auto;
+    margin-bottom: 5px;
+    padding: 5px;
+    min-width: 65%;
+    max-width: 65%;
+    border: 1px solid;
+}
+
+footer {
+    grid-area: f;
+    min-width: 100%;
+    max-width: 100%;
+    background-color: dodgerblue;
+    border: 1px solid;
+}

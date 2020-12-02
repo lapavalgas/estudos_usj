@@ -1,0 +1,130 @@
+/*****************************
+    ACADEMIC COMPONENT: v2
+*****************************/
+
+
+/*****************************
+    Evolução:
+    2. melhorar o layout responsivo
+*****************************/
+
+
+/*****************************
+    .box
+*****************************/
+
+.box {
+    margin: 3px;
+    padding: 5px;
+    font-family: serif;
+    font-size: 1em;
+    text-align: justify;
+    margin-bottom: 8px;
+    min-width: 420px;
+    max-width: 420px;
+    height: auto;
+}
+
+
+/*****************************
+    .resume
+*****************************/
+
+.resume {
+    margin: 3px;
+    padding: 5px;
+    border-bottom: 1px dashed dodgerblue;
+}
+
+.resume:hover {
+    margin: 3px;
+    padding: 5px;
+    border-bottom: 1px solid dodgerblue;
+}
+
+.resume--summary {
+    border: 1px dashed dodgerblue;
+    border-top: none;
+    /* display: none; */
+    /* onload() none; onclick() show/hide*/
+}
+
+
+/*****************************
+    .resume__view
+*****************************/
+
+.resume__view {
+    margin: 3px;
+    padding: 3px;
+}
+
+.resume__view--lesser {
+    line-height: 50%;
+}
+
+.resume__view--enphasis {
+    padding: 5px;
+}
+
+.resume__view--title {
+    font-size: 1.1em;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.resume__view--local {
+    font-size: 0.85em;
+}
+
+
+/*****************************
+    shadow version
+*****************************/
+
+.box--shadow {
+    /* put --shadow */
+    margin: 3px;
+    padding: 5px;
+    font-family: serif;
+    font-size: 1em;
+    text-align: justify;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 8px;
+    min-width: 420px;
+    max-width: 420px;
+}
+
+.box--shadow:hover {
+    /* put --shadow */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.resume--shadow {
+    /* put --shadow */
+    margin: 3px;
+    padding: 5px;
+}
+
+.resume--summary--shadow {
+    border: none;
+}
+
+.resume__view--title--shadow {
+    /* put the class */
+    border-bottom: solid 1px;
+}
+
+
+/*****************************
+    JS action
+*****************************/
+
+
+/*****************************
+    presentation
+*****************************/
+
+.estrutura {}
+
+.margin {}

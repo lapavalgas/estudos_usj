@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="../style/_reset.css">
+    <link type="text/css" rel="stylesheet" href="../style/components2.css">
+    <script type="text/javascript" src="../scripts/box.resume.js"></script>
+    <script type="text/javascript" src="../scripts/scripts.js"></script>
+    <!-- 
+        This represent my first web project and I focus in CSS. 
+        In four days I did my finest to catch some the best practices in CSS. 
+        Now, I move to JavaEE and server-side. But I need focus on my master degree too :/      :)
+        So,
+                if (you_can_understand && like_this) { 
+                    return: you_can_hiring_me(please); 
+                } else {
+
+        Thank you by your time to look at this. I'll accept any suggestion. Bye bye. }
+                                                Rafael Lapa Valgas      26/09/2019         -->
+    <title>logo.menu</title>
+</head>
+
+<body onload="switchMenu('About')">
+    <header>
+        <section class="wrapper">
+            <section class="logo">
+                <!-- logo  -->
+                <div class="logo__content">
+                    <div class="logo__content logo__content--name">
+                        <h1>Rafael</h1>
+                    </div>
+                    <div class="logo__content logo__content--lastname">
+                        <h1>Lapa</h1>
+                        <h1>valgas</h1>
+                    </div>
+                    <!-- logo  -->
+            </section>
+            <section class="menu">
+                <!-- Menu -->
+                <div class="menu__content">
+                    <ul class="tablinks">
+                        <!-- Menu mobile appear -->
+                        <li class="tablinks__item tablinks__item--mobile open__menu" onclick="openMenu()">
+                            <p>☰ Menu</p>
+                        </li>
+                        <!-- Menu mobile appear -->
+                        <li class="tablinks__item tablinks__item--desktop" onclick="switchMenu('About')">
+                            <p>About</p>
+                        </li>
+                        <li class="tablinks__item tablinks__item--desktop" onclick="switchMenu('Curriculum')">
+                            <p>Curriculum</p>
+                        </li>
+                        <li class="tablinks__item tablinks__item--desktop" onclick="switchMenu('Programmer')">
+                            <p>Programmer</p>
+                        </li>
+                        <li class="tablinks__item tablinks__item--desktop" onclick=" switchMenu('Psychology') ">
+                            <p>Psychology</p>
+                        </li>
+                        <li class="tablinks__item tablinks__item--desktop" onclick="switchMenu('Music')">
+                            <p>Music</p>
+                        </li>
+                    </ul>
+                    <ul class="tablinks">
+                        <li class="tablinks__item tablinks__item--desktop tablinks__item--pink" onclick="switchMenu('Hobby')">
+                            <p>Hobby</p>
+                        </li>
+                    </ul>
+                    <!-- Menu mobile hidden -->
+                    <div id="mobile__menu" class="mobile__menu">
+                        <p href="javascript:void(0)" class="close__menu" onclick="closeMenu()">×</p>
+
+                        <ul class="mobile__menu__hidden">
+                            <li class="mobile__menu__hidden--active" onclick="switchMenu('About')">
+                                <p>About</p>
+                            </li>
+                            <li class="mobile__menu__hidden--active" onclick="switchMenu('Curriculum')">
+                                <p>Curriculum</p>
+                            </li>
+                            <li class="mobile__menu__hidden--active" onclick="switchMenu('Programmer')">
+                                <p>Programmer</p>
+                            </li>
+                            <li class="mobile__menu__hidden--active" onclick=" switchMenu('Psychology') ">
+                                <p>Psychology</p>
+                            </li>
+                            <li class="mobile__menu__hidden--active" onclick="switchMenu('Music')">
+                                <p>Music</p>
+                            </li>
+                            <li class="mobile__menu__hidden--active mobile__menu__hidden--pink" onclick="switchMenu('Hobby')">
+                                <p>Hobby</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Menu mobile hidden -->
+                </div>
+                <!-- Menu -->
+            </section>
+        </section>
+
+
+        <!-- content : is a wrapper inside de main-->
+        <section class="wrapper">
+            <div id="About" class="tab__content">
+                <h3>Put the About content here!</h3>
+                <p>And here.</p>
+            </div>
+
+            <div id="Curriculum" class="tab__content">
+                <h3>Put the Curriculum content here!</h3>
+                <p>And here.</p>
+            </div>
+            <div id="Programmer" class="tab__content">
+                <h3>Put the Programmer content here!</h3>
+                <p>And here.</p>
+            </div>
+            <div id="Psychology" class="tab__content">
+                <h3>Put the Psychology content here!</h3>
+                <p>And here.</p>
+            </div>
+
+            <div id="Music" class="tab__content">
+                <h3>Put the Music content here!</h3>
+                <p>And here.</p>
+            </div>
+            <div id="Hobby" class="tab__content tab__content--hobby">
+                <h3>Put the Hobby content here!</h3>
+                <p>And here.</p>
+            </div>
+            <!-- content : is a wrapper inside de main-->
+        </section>
+
+        <!-- deletar para baixo-->
+
+
+    </header>
+</body>
+
+</html>

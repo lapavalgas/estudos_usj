@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<body>
+
+    <div ng-app="app" ng-controller="produtosCtrl">
+
+        <p>Selecione um produto:</p>
+
+        <select ng-model="selectProduto">
+            <option ng-repeat="x in produtos" value="{{x.produto}}">{{x.produto}}</option>
+        </select>
+
+        <h1>Seu Produto é: {{selectProduto}}</h1>
+
+    </div>
+
+    <script>
+        var app = angular.module('app', []);
+        app.controller('produtosCtrl', function ($scope) {
+            $scope.produtos = [
+                { produto: 'Farinha', preco: 10.00 },
+                { produto: 'Arroz', preco: 7.00 },
+                { produto: 'Macarrão', preco: 7.89 }
+            ];
+        });
+    </script>
+
+</body>
+
+</html>

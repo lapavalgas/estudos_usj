@@ -1,0 +1,81 @@
+<!-- <%@ page language="java"
+	contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<%@ page import="java.util.List" %>
+<%@ page import="ads.lp2.springdatajpa.model.Aluno" %>
+<%@ page import="ads.lp2.springdatajpa.controller.AlunoDAO" %>
+
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> -->
+
+<!-- <%@ page import="java.util.List" %>
+<%@ page import="java.util.ArrayList" %> -->
+
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="webjars/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="webjars/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="webjars/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
+
+	<title>Spring Data JPA</title>
+</head>
+
+<body>
+	<div class="container .container-fluid">
+		<section class="container .container-fluid">
+			<div style="margin: 2em; margin-bottom: 4em;">
+				<h1>Linguagem de Programação 2<span></h1>
+			</div>
+		</section>
+		<section class="container .container-fluid">
+			<table class="table table-striped">
+				<thead class="thead-dark">
+					<th scope="col">#</th>
+					<th scope="col">Nome</th>
+					<th scope="col">Sobrenome</th>
+					<th scope="col"><span style="color:black;">.</span></th>
+				</thead>
+				<tbody>
+					<tr th:if="${alunos.empty}">
+						<td colspan="2"> Cadê os alunos...? </td>
+						<td colspan="2"></td>
+					</tr>
+					<tr th:each="alunos : ${alunos}">
+						<td><span th:text=" ${alunos.id}"> id</span></td>
+						<td><span th:text=" ${alunos.firstName}"> id</span></td>
+						<td><span th:text=" ${alunos.lastName}"> id</span></td>
+						<td>
+							<form action="/delete" method="post">
+								<input type="text" name="id" th:value="${alunos.id}" style="display:none;">
+								<input class="btn btn-primary" type="submit" value="delete">
+							</form>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section class="container .container-fluid">
+			<div class="form-group">
+				<form action="/add" method="post">
+					<div><input type="text" class="form-control" name="firstName" placeholder="First name"><br> </div>
+					<div><input type="text" class="form-control" name="lastName" placeholder="Last name"><br></div>
+					<div><input type="submit" value="add" class="btn btn-primary"
+							style="width: 20%; margin: auto; margin-top: 1em;"></div>
+				</form>
+			</div>
+		</section>
+
+	</div>
+
+</body>
+
+</html>

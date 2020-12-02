@@ -1,0 +1,340 @@
+header{
+	background: white;
+}
+/* Social absolute-at-logo*/
+.social.pull-right{
+	top:20px;
+	right:10px;
+	position: absolute;
+	background-color: white;
+}
+
+
+/* social header white*/
+.header-top-info-1{
+	background-color: #ffffff;
+		border-bottom: 0px;
+}
+
+/*header1*/
+.col-md-8{
+	float: right;	
+}
+/*Corrige a responsividade*/
+@media (max-width: 1000px){
+.col-md-8{
+	float: none;	
+	}
+}
+/*Corrige a responsividade*/
+@media (min-width: 768px){
+.navbar-nav > li > a {
+	padding-top: 0px;
+
+	}
+}
+/*Adequa o menu-topo*/
+.navbar{
+	box-shadow: 0 6px 12px -3px rgba(0, 0, 0, 0.175) !important;
+}
+.nav-fabify .navbar-nav li a {
+	font-size: 12px;
+	padding-bottom: 0px;
+}
+.nav-fabify {
+	background-color: #01406e;
+}
+#bs-example-navbar-collapse-1{float: right; width: 55%;}
+
+@media (min-width: 1000px){
+}
+
+
+@media (max-width: 768px){
+	#bs-example-navbar-collapse-1{
+		width: 100%;
+		margin: auto;
+	}
+	
+}
+
+
+.targetBlank{
+	target: "_blank";
+}
+
+/*Menu à direita*/
+.search-cart.text-right{
+	display: none;
+}
+/*remove chart*/
+.padding-bottom-30{
+	padding-bottom: 0px;
+}
+/*diminui padding nav*/
+.padding-top-60{
+	padding-top: 0px;
+}
+.page-breadcrumb {
+	line-height: 0px;
+}
+/*diminui padding nav*/
+.page-breadcrumb li{
+	display: none;
+}
+/*Texto da posição*/
+.col-sm-6 h2{
+	display:none;
+}
+/*Texto da noticia*/
+
+.nav-fabify{
+	background-color: #1659bf;
+}
+/*cor nav*/
+.breadcrumb.fabify .background-overlay{
+	background-color: white;
+}
+
+.navbar-default .navbar-nav>.active > a, .navbar-default .navbar-nav>.active>a:hover, .dropdown-menu > .active > a{
+	background: none !important;
+}
+
+
+/*corrigem margem menu-top com content*/
+.breadcrumb.fabify{
+	display:none;
+}
+div#content.site-content {
+	margin-top: 50px;
+}
+/**/
+img{
+	 margin: 0 auto;
+}
+/*centraliza imagens*/
+
+aside#nav_menu-6.widget{
+	background: white;
+}
+
+/*menu*/
+aside#nav_menu-13.widget{
+	background: white;
+}
+/*menu*/
+aside#nav_menu-14.widget{
+	background: white;
+}
+/*menu*/
+section.footer-copyright{
+	background-color: #01406e;
+}
+.sidebar{
+	margin-top: 6%;
+}
+.sidebar .widget {
+    margin: 0 0 50px;
+}
+.sidebar .widget ul li a {
+	padding-top: 6%;
+	padding-bottom: 4%;
+	padding-right: 20%;
+	/*background: tomato;*/
+}
+
+.navigation {
+ width: 100%;
+}
+
+.navigation>ul {
+ width: 100%;
+}
+
+.navigation>li {
+ width: 100%;	
+}
+
+.navigation ul ul {
+	left: 45%;
+}
+
+.sidebar .widget ul li > a {
+ padding: 8px 0px;
+ margin: 0 0;
+ padding-right: 10px;
+}
+
+
+navigation.Select.Menu.Theme{
+	margin: 0px;
+	width: 100%;
+}
+		
+
+.has-sub>ul{
+	background-color: white;
+	border: 1px solid;
+	
+}
+
+.sidebar .widget .has-sub li {
+border:none;
+	font-size: 14px;
+	margin: 5px;
+	padding: 0;
+
+}
+
+.navigation a {
+	padding: 0 0;
+	width: 100%;
+	text-transform: none;
+}
+
+
+/*menu first child*/
+.navigation > ul :first-child  >a{
+	width: 1.27em;
+	pointer-events: none;
+  cursor: default;
+	text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+	border-bottom: 2px solid #1490d7;;
+
+}
+
+a:after{
+	content: none !important;
+}
+
+.navigation > ul :first-child {
+	padding-bottom: 0px;
+}
+
+/*corrige submenu institucional*/
+.has-sub > ul :first-child > a {
+	width: 100%;
+	pointer-events: auto;
+  cursor: pointer;
+	text-transform: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+	border-bottom: none;
+}
+
+
+.noticias {
+	padding: 0.5px;
+	padding-left: 14px;
+	font-weight: normal;
+	color: #1659bf;
+}
+
+/*Corrige a responsividade*/
+@media (min-width: 1000px){
+	.navigation ul ul {
+	left: 99%;
+	}	
+}
+
+/*Corrige a responsividade*/
+@media (max-width: 968px){
+div.navigation.Select.Menu.Theme::before {
+	color: #1659bf;
+	content: "Pressione para abrir o submenu:";
+	display: inline;
+	}/*
+	li.has-sub >a::before{
+	color: #1659bf;
+	content: "> ";
+	}*/
+}
+
+
+/*footer B*/
+.footer-sidebar .background-overlay {
+    background: #1659bf;
+}
+/*footer A*/
+.background-overlay{
+	padding: 2em;	
+}
+
+.recentpost-categories{
+	display: none;
+}
+.recent-post-slider .slick-dots li{
+	padding-right: 15px !important;
+}
+
+.post-short-content{
+	display:none !important;
+}
+a.top-scroll{
+	background-color: #1659bf;
+}
+
+.widget{
+	padding-left: 0.5em;
+	color: #1659bf;
+	background-color: transparent;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  display: block;
+	
+ 
+}
+.widget>h2{
+	    background-color: #f7f9fc;
+	  border-bottom: 5px solid #1659bf;
+}
+
+.widget>ul{
+		list-style: none;
+}
+
+
+
+
+
+/*Centro muni. USJ*/
+h3.elementor-heading-title.elementor-size-large{
+	line-height: 1.5em;
+	padding-left: 0.5em;
+	  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+}
+
+
+/*corrige cor no footer copyright*/
+
+.footer-copyright{
+	background-color: #064096 !important;
+}
+p.copyright{
+	font-family: 'Open Sans', sans-serif;
+	background-color: #064096 !important;
+}
+
+
+/** CORRIGE MENU LARGO ATIVO **/
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active.focus > a{
+	font-size: 12px;
+	padding: 1px;
+}
+
+
+/** REMOVE FOOTERS MOBILE **/
+
+@media (max-width: 990px){
+#nav_menu-29, #nav_menu-20, #nav_menu-18{
+	display: none;
+}
+}

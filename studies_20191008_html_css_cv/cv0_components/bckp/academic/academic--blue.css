@@ -1,0 +1,141 @@
+.estrutura {
+    width: 40%;
+    margin: 3px auto;
+    padding: 5px;
+}
+
+
+/*****************************
+    ACADEMIC COMPONENT: v1
+*****************************/
+
+
+/*****************************
+    Evolução:
+    1. refatorar para remover os margin e padding redundantes
+    2. melhorar o layout responsivo
+*****************************/
+
+
+/*****************************
+    ACADEMIC__VIEW
+
+    Essa versão apresenta cartões sombreados.
+    Tem a versão com bordas dashed azul.
+
+*****************************/
+
+.academic {
+    margin: 3px;
+    padding: 5px;
+    max-width: 420px;
+    min-width: 420px;
+    /*height: 100px;  apresentação inicial */
+    padding: 5px;
+    font-family: serif;
+    font-size: 0.95em;
+    text-align: justify;
+}
+
+.academic:hover {}
+
+.academic__view {
+    margin: 3px;
+    padding: 5px;
+    border-bottom: 1px dashed dodgerblue;
+}
+
+.academic__view:hover {}
+
+.academic__view__title {
+    margin: 3px;
+    padding: 3px;
+    font-size: 1.1em;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.academic__view__local {
+    margin: 3px;
+    padding: 3px;
+}
+
+.academic__view__date {
+    margin: 3px;
+    padding: 3px;
+}
+
+.academic__view__status {
+    margin: 3px;
+    padding: 3px;
+}
+
+
+/*****************************
+    ACADEMIC__RESUME
+
+    Essa estrutura deverá ser apresentada oculta, 
+    clicar em __view deverá apresentar em dropdown o __resume.
+
+*****************************/
+
+.academic__resume {
+    margin: 3px;
+    padding: 5px;
+    border: 1px dashed dodgerblue;
+    border-top: none;
+    /*display: none; apresentação inicial */
+}
+
+.academic__resume:active {
+    display: none;
+}
+
+.academic__resume__title {
+    margin: 3px;
+    padding: 3px;
+    font-size: 1.1em;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.academic__resume__text {
+    margin: 3px;
+    padding: 3px;
+    line-height: 115%;
+}
+
+.academic__topic {
+    margin: 3px;
+    padding: 5px;
+}
+
+.academic__topic__title {
+    margin: 3px;
+    padding: 3px;
+    font-family: monospace;
+    font-size: 1.1em;
+    font-weight: bold;
+    line-height: 50%;
+}
+
+.academic__topic__data {
+    margin: 3px;
+    padding: 3px;
+    line-height: 50%;
+}
+
+.academic__topic__resume {
+    margin: 3px;
+    padding: 3px;
+    line-height: 90%;
+}
+
+
+/*****************************
+    EXEMPLOS: DELETAR
+*****************************/
+
+.academic__resume__OFF {
+    display: none;
+}

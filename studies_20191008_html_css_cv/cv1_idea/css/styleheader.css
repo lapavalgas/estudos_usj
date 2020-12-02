@@ -1,0 +1,44 @@
+.header-a {
+    width: 100%;
+}
+
+.header-b {
+    width: 100%;
+}
+
+.header-c {
+    width: 100%;
+}
+
+.menu-container {
+    width: 100%;
+    padding: 0em;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    color: black;
+}
+
+.menu li {
+    text-decoration: none;
+    margin-top: 4.7em;
+    margin-left: 1.2em;
+    display: flex;
+    color: black;
+    background-image: linear-gradient(rgb(255, 255, 255) 0%, rgb(255, 255, 255) 63%, rgb(255, 255, 255) 76%, rgb(255, 255, 255) 86%, rgb(0, 0, 0) 87%, rgb(255, 255, 255) 90%);
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+    color: black;
+}
+
+.menu li a:link {
+    text-decoration: none;
+}
+
+
+/* header */

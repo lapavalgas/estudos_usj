@@ -1,0 +1,62 @@
+/*footer*/
+#site-footer-credit{
+	background-color: #031358;
+}
+
+#site-footer{
+	background-color: #253b80;
+}
+
+#site-footer a {
+	color: white;
+}
+
+#site-footer .current-menu-item a, #site-footer a:hover, #site-footer a:focus{
+	color:white;
+}
+#site-footer .widget-title {
+    color: white;
+}
+
+/*footer*/
+#site-footer-credit{
+	color:white;
+}
+.theme-credit{
+	display:none;
+}
+
+/*menu*/
+.site-column-aside .widget_nav_menu .menu-item-has-children > a, .site-column-aside .widget_nav_menu .menu-item > a{
+		color: white;
+	background-color: #253b80;
+}
+.site-column-aside .widget_nav_menu .menu-item-has-children .menu-item > a {
+	color: white;
+	background-color: #253b80;
+}
+.site-column-aside .widget_nav_menu .current-menu-parent .sub-menu .menu-item > a {
+    color: white;
+}
+/*menu*/
+/*top*/
+.site-section-wrapper-primary-menu {
+    background-color: #253b80;
+}
+.large-nav a:hover, .large-nav a:focus, .large-nav .current-menu-item > a, .large-nav .current_page_item > a, .large-nav .current-menu-parent > a {
+    color: rgb(1000, 80, 80);
+}
+/*top*/
+
+.page-title {
+	display:none;
+}
+.home #site-main{
+	margin:0px;
+}
+
+.widget-title{
+	padding-top:20px;
+}
+
+

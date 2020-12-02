@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'" />
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/angularjs.js"></script>
+    <title>Hello World</title>
+</head>
+
+<body>
+    <div class="app">
+        <div ng-app="app">
+
+            <div ng-controller="mCtrl">
+
+                <div>
+                    <label for="codEmpregado">Codigo do empregado</label>
+                    <input ng-model="codEmpregado" type="text" name="codEmpregado" value="0">
+                </div>
+
+                <div>
+                    <label for="anoNascimento">Ano de nascimento</label>
+                    <input ng-model="anoNascimento" type="text" name="anoNascimento" value="0">
+                </div>
+
+                <div>
+                    <label for="anoIngresso">Ano de ingresso na empresa</label>
+                    <input ng-model="anoIngresso" type="text" name="anoIngresso" value="0">
+                </div>
+
+
+                <div id="texto" style="display: none;">
+                    <p> A idade do empregado é : {{idade}}.</p>
+                    <p> Trabalhando a tanto tempo na empresa: {{tempo}}.</p>
+                    <p> {{msg}}.</p>
+                </div>
+
+                <button ng-click="calcular()"> Calcular </button>
+
+            </div>
+
+
+            <script>
+                var app1 = angular.module("app", []);
+
+                app1.controller("mCtrl", function ($scope) {
+
+                    $scope.calcular = function () {
+
+                        $scope.msg = "NÃO requer aposentadoria!!";
+
+                        $scope.idade = 2020 - $scope.anoNascimento;
+                        $scope.tempo = 2020 - $scope.anoIngresso;
+
+                        if ($scope.idade >= 60 && $scope.tempo >= 20) {
+                            $scope.msg = "requer aposentadoria!!";
+                        } if ($scope.idade >= 65) {
+                            $scope.msg = "requer aposentadoria!!";
+                        } if ($scope.tempo >= 25) {
+                            $scope.msg = "requer aposentadoria!!";
+                        }
+                    }
+
+                    document.getElementById("texto").style.display = "inline";
+
+                });
+
+            </script>
+        </div>
+    </div>
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

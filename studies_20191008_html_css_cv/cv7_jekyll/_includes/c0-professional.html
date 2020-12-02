@@ -1,0 +1,39 @@
+<!-- professional -->
+
+<section class="professional">
+
+  <!-- professional title -->
+
+  <div class="professional__title">
+
+    <h4>Professional</h4>
+
+  </div>
+
+  <!-- /professional title -->
+
+  <!-- card loop -->
+
+  {% for document in site.data.professional %}
+
+    {% for resume in document %}
+
+      {% if resume.first.id != null %}
+
+        <section class="professional__card" onclick="openCloseCard('{{resume.first.id}}')">
+
+          {% include c1-resume.html resume="resume" %}
+
+        </section>
+
+      {% endif %}
+
+    {% endfor %}
+
+  {% endfor %}
+
+  <!-- /card loop -->
+
+</section>
+
+<!-- /professional -->

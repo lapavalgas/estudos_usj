@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<body>
+
+    <div ng-app="myApp" ng-controller="nomesCtrl">
+
+        <p>NG Repeat:</p>
+        <ul>
+            <li ng-repeat="x in produtos | orderBy:'produto'">
+                {{ x.produto + ', ' + x.preco + ',   preço  multiplicado:' + x.preco * 5.0}}
+            </li>
+        </ul>
+
+    </div>
+
+    <script>
+        angular.module('myApp', []).controller('nomesCtrl', function ($scope) {
+            $scope.produtos = [
+                { produto: 'Farinha', preco: 10.00 },
+                { produto: 'Arroz', preco: 7.00 },
+                { produto: 'Macarrão', preco: 7.89 }
+            ];
+        });
+    </script>
+
+</body>
+
+</html>

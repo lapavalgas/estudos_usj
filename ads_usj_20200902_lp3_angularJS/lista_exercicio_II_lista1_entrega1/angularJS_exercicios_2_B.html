@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>exercicios</title>
+</head>
+
+<body ng-app="app">
+
+    <div ng-controller="mCtrl">
+        <p>Digite um numero para saber o antecessor</p>
+        <input ng-model="base" type="number">
+        <input ng-model="altura" type="number">
+        <p>A área do retangulo é a base {{area}}</p>
+        <button ng-click="calculaArea()">calcular area</button>
+    </div>
+
+    <script>
+        var app1 = angular.module("app", []);
+        
+        app1.controller("mCtrl", function ($scope) {
+
+            $scope.calculaArea = function () {
+                $scope.area = $scope.base * $scope.altura;
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+INSERT INTO actor (first_name, last_name) values ('?','?');
+
+SELECT * FROM actor;
+
+DELETE FROM actor;
+
+UPDATE actor SET first_name = Edward WHERE first_name = Ed; // ctor_id 3

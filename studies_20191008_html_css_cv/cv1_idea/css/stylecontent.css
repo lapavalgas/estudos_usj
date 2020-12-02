@@ -1,0 +1,52 @@
+.content {
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-bottom: 5em;
+    background-color: white;
+}
+
+.perfilprof {
+    width: 100%;
+    text-align: justify;
+    text-indent: 3em;
+    font-weight: normal;
+    padding-bottom: 1em;
+}
+
+.expprof {
+    width: 100%;
+    text-align: left;
+    font-weight: bolder;
+    padding-top: 1em;
+}
+
+.expprof li {
+    padding-bottom: 1em;
+}
+
+.expprof ul {
+    padding-bottom: 1em;
+}
+
+.cargo {
+    width: 100%;
+    text-align: left;
+    text-indent: 3.4em;
+    font-weight: normal;
+    padding-top: 1em;
+}
+
+.periodo {
+    font-weight: normal;
+}
+
+.atribuiçõesprof {
+    width: 100%;
+    text-align: left;
+    text-indent: 3.4em;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+
+/* content *

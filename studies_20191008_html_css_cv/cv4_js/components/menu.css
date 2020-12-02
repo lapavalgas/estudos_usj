@@ -1,0 +1,81 @@
+/************************************
+    menu component: v1.1
+*************************************/
+
+
+/************************************
+    Evolução:
+    1. dropdown menu
+    2. tab menu
+*************************************/
+
+
+/************************************
+    .menu
+*************************************/
+
+.box__menu {
+    margin-bottom: 5px;
+    display: flex;
+    font-family: monospace;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__list__link {
+    width: 6em;
+    height: 2em;
+    margin: 3px;
+    padding: 5px;
+    background-color: dodgerblue;
+}
+
+.menu__list__link:hover {
+    border-bottom: 3px solid hotpink;
+}
+
+.menu__list__link:active {
+    background-color: azure;
+}
+
+.menu__list__link--negative {
+    background-color: hotpink;
+}
+
+.menu__list__link--negative:hover {
+    border-bottom: 3px solid dodgerblue;
+}
+
+.link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding-top: 10%;
+    text-decoration: none;
+    text-align: center;
+    color: aliceblue;
+}
+
+.link:hover {
+    color: black;
+}
+
+
+/************************************
+    presentation
+*************************************/
+
+.estrutura {
+    margin: 3px auto;
+    padding: 5px;
+}
+
+.presentation {
+    margin: 3px auto;
+    padding: 5px;
+}

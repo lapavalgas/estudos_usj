@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Atividade08</string>
+    <string name="inputSalarioFixo">Qual o valor do salário fixo?</string>
+    <string name="inputValorTotalVendas">Qual o valor total das vendas?</string>
+    <string name="btnCalcular">CALCULAR SALARIO DO TRABAIADO</string>
+    <string name="textResult">" "</string>
+</resources>

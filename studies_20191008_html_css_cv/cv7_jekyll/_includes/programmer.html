@@ -1,0 +1,31 @@
+<section class="wrapper">
+
+    <!-- programmer -->
+
+    <section id="Programmer" class="tab__content programmer">
+
+        <!-- programmer -->
+
+        {% for text in site.data.programmer %}
+
+            {% include text.html  %}
+
+            <section class="wrapper__projectcard">
+
+                {% for card in text.projectcard %}
+
+                    {% include card-projectcard.html %}
+
+                {% endfor %}
+
+            </section>
+
+        {% endfor %}
+
+        <!-- /programmer -->
+
+    </section>
+
+    <!-- /programmer -->
+
+</section>

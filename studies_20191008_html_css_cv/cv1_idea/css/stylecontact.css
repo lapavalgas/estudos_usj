@@ -1,0 +1,64 @@
+.contact-menu {
+    background-color: white;
+    padding: 12px;
+    display: block;
+    float: right;
+    padding-right: 1.2em;
+}
+
+.contatos {
+    width: 100%;
+    text-align: right;
+    padding: 1em;
+    padding-bottom: 1em;
+    padding-top: 1.1em;
+    display: block;
+}
+
+.contatos a {
+    text-decoration: none;
+    color: black;
+    padding: 1em;
+}
+
+.contatos img {
+    max-width: 18px;
+    max-height: 18px;
+    float: right;
+}
+
+.contatos li {
+    padding-bottom: 1em;
+}
+
+.formação {
+    border: 0px;
+    border-top: 1px;
+    border-style: dashed;
+    width: 100%;
+    text-align: right;
+    padding: 1em;
+    padding-bottom: 1em;
+    padding-top: 2em;
+}
+
+.formação ul {
+    width: 100%;
+}
+
+.formação li {
+    width: 100%;
+    padding-bottom: 1em;
+    display: block;
+}
+
+#instituto {
+    font-weight: bolder;
+}
+
+#cursos {
+    font-weight: normal;
+}
+
+
+/* contact */

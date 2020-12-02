@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<head>
+    <style>
+        table {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+
+        tr:nth-child(even) {
+            background: #FFF
+        }
+
+        tr:nth-child(odd) {
+            background: #EEE
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>Ordene pelas Colunas:</p>
+
+    <div ng-app="app" ng-controller="produtosCtrl">
+
+        <table border="1" width="100%">
+            <tr style="background-color: cadetblue;">
+                <th ng-click="ordenar('produto')">Nome</th>
+                <th ng-click="ordenar('preco')">Preço</th>
+            </tr>
+            <tr ng-repeat="x in produtos | orderBy:ordenador">
+                <td>{{x.produto}}</td>
+                <td>{{x.preco}}</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <script>
+        angular.module('app', []).controller('produtosCtrl', function ($scope) {
+            $scope.produtos = [
+                { produto: 'Farinha', preco: 10.00 },
+                { produto: 'Arroz', preco: 7.00 },
+                { produto: 'Macarrão', preco: 7.89 }
+            ];
+            $scope.ordenar = function (x) {
+                $scope.ordenador = x;
+            }
+        });
+    </script>
+
+</body>
+
+</html>

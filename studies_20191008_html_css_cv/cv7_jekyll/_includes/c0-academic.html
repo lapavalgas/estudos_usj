@@ -1,0 +1,39 @@
+<!-- academic -->
+
+<section class="academic">
+
+  <!-- academic title -->
+
+  <div class="academic__title">
+
+    <h4>Academic</h4>
+
+  </div>
+
+  <!-- /academic title -->
+
+  <!-- card loop -->
+
+  {% for document in site.data.academic %}
+
+  {% for resume in document %}
+
+  {% if resume.first.id != null %}
+
+  <section class="academic__card" onclick="openCloseCard('{{resume.first.id}}')">
+
+    {% include c1-resume.html resume="resume" %}
+
+  </section>
+
+  {% endif %}
+
+  {% endfor %}
+
+  {% endfor %}
+
+  <!-- /card loop -->
+
+</section>
+
+<!-- /academic -->

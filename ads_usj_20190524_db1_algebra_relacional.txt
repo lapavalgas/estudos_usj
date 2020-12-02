@@ -1,0 +1,73 @@
+DB 1 : PARTE 2 :
+ALGEBRA RELACIONAL
+
+
+OPERAÇÕES UNARIAS
+	SELEÇÃO: sigma <condição> (Relação)  	|  > >=  =  <=  <  	| Pode ocorrer com AND, OR, 
+	PROJEÇÃO: pi <atributos> (Relação)  	| Ocorre com DISTINCT	| Pode ocorrer varias com ' , '
+
+		: pi <atributos> (sigma <condição> (Relação))
+
+	RENOMEAR: rho <novoNome/velhoNome>(Relação)
+		NovoNome (atributo1, atributo2) <- Relação (atributo1, atributo2) 
+
+OPERAÇÕES BINARIAS
+	JUNÇÃO: Combinar tuplas de uma relação R1 que estão relacionadas com as tuplas de uma relação R2 através de uma condição.
+		Equivale a um produto cartesiano mais uma selação
+		Relação 1 |><| <condição de junção> Relação 2
+	JUNÇÃO NATURAL: Combina R1 com R2 através de atributos de mesmo nome.
+		Relção 1 *( <atributo_r1 = atributo_r2> Relação2
+
+OPERAÇÕES DA TEORIA : ESSAS OPERAÇÕES UTILIZAM SELEÇÃO, PROJEÇÃO E RENOMEAÇÃO PARA FUNCIONAR.
+	UNIÃO: As relações de uma união devem ter mesmo número de atributos e com o mesmo nome
+	INTERSECÇÃO: Resulta nas tuplas que pertence em ambas relações
+	DIFERENÇA: resulta nas tuplas da relação 1 que não estão na relação 2 
+	PRODUTO CARTESIANO: combina tuplas de uma relação R1 com as de uma R2 (R1*R2).
+
+
+
+
+
+
+
+> INTERSECÇÃO | n | // 
+	.todas as tuplas 
+> DIFERENÇA | -> | // 
+	.todas as tuplas que não estão em R mas estão em S
+
+
+
+> JUNÇAO | | // JOIN
+
+SELECT <coluna>
+FROM <tabela1>
+JOIN <tabela2>
+ON <condição de junção>
+WHERE <condição de pesquisa>
+
+> JUNÇÃO EXTERNA  | | // JOIN
+
+SELECT <coluna>
+FROM <tabela>
+LEFT | RIGHT | FULL | OUTER JOIN <tabela1>
+ON <tabela2>
+
+
+
+
+
+
+SELECT 
+SUM(valor-locacao_preco) AS lucroExtra, 
+extract(Month FROM pagamento_date) AS mes, 
+year(pagamento_date) AS ano
+FROM pagamento p 
+JOIN locacao l 
+ON (p.locacao_id = l.locacao_id)
+JOIN estoque e 
+ON (e.estoque_id = l.estoque_id) 
+JOIN filme f ON
+(e.filme_id = f.filme_id) 
+WHERE f.locacao_preco < p.valor group
+BY mes, ano 
+ORDER BY lucroExtra DESC

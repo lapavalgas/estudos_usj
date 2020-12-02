@@ -1,0 +1,85 @@
+<!-- menu -->
+
+<section class="menu">
+
+    <div class="menu__content">
+
+        <!-- tablinks -->
+
+        <ul class="tablinks">
+
+            <!-- menu mobile appear -->
+
+            <li class="tablinks__item tablinks__item--mobile open__menu" onclick="openMenu()">
+                <p>☰ Menu</p>
+            </li>
+
+            <!-- /menu mobile appear -->
+
+            <li class="tablinks__item tablinks__item--desktop" onclick="switchMenu('About')">
+                <p>About</p>
+            </li>
+            <li class="tablinks__item tablinks__item--desktop" onclick="switchMenu('Curriculum')">
+                <p>Curriculum</p>
+            </li>
+            <li class="tablinks__item tablinks__item--desktop" onclick="switchMenu('Programmer')">
+                <p>Programmer</p>
+            </li>
+            <li class="tablinks__item tablinks__item--desktop" onclick=" switchMenu('Psychology') ">
+                <p>Psychology</p>
+            </li>
+            <li class="tablinks__item tablinks__item--desktop" onclick="switchMenu('Music')">
+                <p>Music</p>
+            </li>
+        </ul>
+        <ul class="tablinks">
+            <li class="tablinks__item tablinks__item--desktop tablinks__item--pink" onclick="switchMenu('Hobby')">
+                <p>Hobby</p>
+            </li>
+        </ul>
+
+        <!-- /tablinks -->
+
+        <!-- menu mobile hidden -->
+
+        <div id="mobile__menu" class="mobile__menu">
+
+            <!-- close menu -->
+
+            <p href="javascript:void(0)" class="close__menu" onclick="closeMenu()">×</p>
+
+            <!-- /close menu -->
+
+            <!-- mobile hidden -->
+
+            <ul class="mobile__menu__hidden">
+                <li class="mobile__menu__hidden--active" onclick="switchMenu('About')">
+                    <p>About</p>
+                </li>
+                <li class="mobile__menu__hidden--active" onclick="switchMenu('Curriculum')">
+                    <p>Curriculum</p>
+                </li>
+                <li class="mobile__menu__hidden--active" onclick="switchMenu('Programmer')">
+                    <p>Programmer</p>
+                </li>
+                <li class="mobile__menu__hidden--active" onclick=" switchMenu('Psychology') ">
+                    <p>Psychology</p>
+                </li>
+                <li class="mobile__menu__hidden--active" onclick="switchMenu('Music')">
+                    <p>Music</p>
+                </li>
+                <li class="mobile__menu__hidden--active mobile__menu__hidden--pink" onclick="switchMenu('Hobby')">
+                    <p>Hobby</p>
+                </li>
+            </ul>
+
+            <!-- /mobile hidden -->
+
+        </div>
+
+        <!-- /menu mobile hidden -->
+    </div>
+
+</section>
+
+<!-- /menu -->

@@ -1,0 +1,13 @@
+# Robot 1.0
+# command: pip install -r requirements.txt
+# Installing Selenium WebDrive
+
+selenium
+ 
+# Download the browser driver:
+
+# Download mozzila/geckodrive | Geckodrive  
+# https://github.com/mozilla/geckodriver
+
+# Download chrome/chromedrive | ChromeDriver
+# https://chromedriver.chromium.org/downloads

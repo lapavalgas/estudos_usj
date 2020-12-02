@@ -1,0 +1,268 @@
+Database MySQL
+
+..Start:
+
+Arquivos -> Tabelas -> Registros
+
+Database	Modelo relacional
+Tabelas		Registros
+Colunas		Atributos
+Linhas		Tuplas
+Campos			
+
+..Basics start: W3C
+
+SELECT 				- extracts data from a database
+UPDATE				- updates data in a database
+DELETE				- deletes data from a database
+INSERT INTO			- inserts new data into a database
+CREATE DATABASE 		- creates a new database
+ALTER DATABASE 			- modifies a database
+CREATE TABLE 			- creates a new table
+ALTER TABLE 			- modifies a table
+DROP TABLE			- deletes a table
+CREATE INDEX 			- creates an index (search key)
+DROP INDEX 			- deletes an index
+
+..Basic commands at shell: Aula
+
+...ONE: Basic Shell:
+.SELECT VERSION();		--return the MySQL version
+.SELECT VERSION(), CURRENT_DATE;--return the version plus the current date
+.SELECT USER();			--return the selected user
+
+...TWO: Show, create and use databases:
+.SHOW DATABASES;		--return the databases collections
+.CREATE DATABASE <nome>;	--creata a new database
+.USE <database_name>;		--change to the database files
+.SELECT DATABASE();		--return the database in use;
+
+...THREE: Show, create and use tables:
+.SHOW TABLES;			--return the tables collections
+.CREATE TABLE <nome> (<name_column> <data type>,);
+				--create a new table
+.DESCRIBE <tabela>;		--return the structural table (field, type, null, key, default and extras)
+.DESC <table>;			--same here
+
+...Restrições de dominio	--to put after the table create command
+..DEFAULT: 		Dominio
+..NOT NULL: 		the register can't be NULL
+..UNIQUE: 		chave
+..PRIMARY KEY:		integridade da entidade
+..FOREIGN KEY: 		integridade referencial
+..AUTO_INCREMENT:	an auto increment id (PostgresSQL -> SERIAL)
+
+...Types:
+..ENUM:		a finite list (exemple: 'M', 'F')
+
+...FOUR: Alterar tabela
+.ALTER TABLE <tabela> ADD COLUMN <nome> <type>;
+				--create a new column, its put at the end of vector
+.ALTER TABLE <tabela> ADD COLUMN <nome> <type> AFTER <columnn>;
+				--create a new column, its put after the specified column
+.ALTER TABLE <tabela> ADD COLUMN <nome> <type> BEFORE <columnn>;
+				--create a new column, its put beforethe specified column
+.ALTER TABLE <tabela> ADD COLUMN <nome> <type> FIRST <columnn>;
+				--create a new column, its put first position
+..MODIFY
+.ALTER TABLE <tabela> MODIFY COLUMN <column> <type>;
+				--change the column type;
+.ALTER TABLE <table> RENAME COLUMN <column> TO <new_name>;
+				--change the name
+
+...FIVE: Insert, update select data in the tables;
+.INSERT INTO <table> (<columns>,) VALUES (<values>,);
+				--create a new register in the table 
+.UPDATE <tabela> SET <column> WHERE <conditions>;
+				--update the data in the register 
+.SELECT <column> FROM <table>;	--return the data query
+
+...SIX: Delete data, tables and databases;
+.DELETE FROM <table> WHERE <conditions>;
+				--delete the registers 
+.DROP COLUMN <column>
+.DROP TABLE <table>;		--delete the table
+.DROP DATABASE <database>;	--delete the database
+
+--> Aparentemente o SHOW apresenta coleções de estruturas; enquanto que o SELECT retorna valores organizados e demandados, 
+
+
+
+..SHOW
+.SHOW DATABASE;			--return the list of all databases on the servers	-- ORACLE: DESCRIBE instead SHOW syntax
+.SHOW TABLES;			--return the list of all tables in the databse		-- ORACLE: DESCRIBE <table>;
+.SHOW COLUMNS FROM <table>;
+				--return the
+					Field, the column name
+					Type, column data type
+					Key, indicates wheter the column is indexed
+					Default, default value assigned to the column
+					Extra, may contain any additional information that is available about a given column
+
+..SELECT 			--is used to select a data from a database, the result is stored in a result table, the result-set'
+
+.SELECT <column_list> FROM <table>;
+				--the <column_list> includes one or more columns form which data is retrieved
+				--the <table> is the name of the table from wich th information is retrieved
+
+.SELECT <a_single_column> FROM <table>;
+				--<a_single_column> select the all data from especified table
+				--a SELECT statement retireves zero or more rows from one or more database tables
+
+.SELECT * FROM <table>;		--the asterisk * is used to retrieve all of the information contained in the tables; whatever, means ALL
+..DISTINCT			--is used to return only distinct (different) values
+
+.SELECT DISTINCT <column_list> FROM <table>;
+				--return only unique records, intead of fetching the duplicates
+..LIMIT				--is used to limit the number of tuplas are returned	--seeOFFSET syntax
+.SELECT <colum_list> FROM <table> LIMIT <a_number>;
+				--return the number of tuplas specified, even when other data satisfy the conditions
+
+..OFFSET			--used with LIMIT to pick up a set of records		--MySQL start count from ZERO
+.SELECT <colum_list> FROM <table> LIMIT <a_number> OFFSET <a_number>; 
+.SELECT <colum_list> FROM <table> LIMIT <a_number>, <a_number>;
+				--the first number is the START point, the second number is the amount to pick up
+				--therefore LIMIT 3,4 means that you would treat row 3 like row 0 and start showing row 4
+				--the LIMIT <a_number> syntax means: LIMIT 0, <a_number>; always merged with a occulted OFFSET
+
+.SELECT <column> FROM <table>;
+.SELECT <table>.<column> FORM <table>;
+				--the dot can explicit the table, usefully in the future JOINS
+				--Sorting Results / Fully Qualified Names
+
+.ORDER BY			--is used to sort the result-set, with SELECT 
+.SELECT * FROM <table> ORDER BY <column>;
+				--return the data sorted by the alphabetical order in the specified column
+				--by default sorts the result in ascending order	--see ASC/DESC in the ORDER BY
+				--the ORDER BY can sort by multiple columns
+.SELECT * FROM <table> ORDER BY <colum_1>, <column_2>;
+				--when have two tuplas with same register it will be ordered by the second column specified
+
+..WHERE				--is used to filter the records
+.SELECT <column_list> FROM <table> WHERE <condition>;
+				--condition is the filter, by the way
+				--remember: MySQL count from ZERO, an ID=2 will return the tupla number 3 (one more)
+..SQL Operators
+.	=			--Equal
+.	!=			--Not Equal						--replace by the: <>
+.	>			--Greater than
+.	<			--Less than
+.	>=			--Greater than or equal
+.	<=			--Less than or equal
+.	BETWEEN			--Between an inclusive range, values with an range
+.	<>			--?
+.	is			--?
+
+
+.SELECT <column_list> FROM <table> WHERE <colum> != <register>;
+				--example, will return the data that don't have the specified register in the condition WHERE
+				--and follows...
+
+..AND				--used to concatenated expressions, values...
+.SELECT <column_list> FROM <table> WHERE <column> BETWEEN <value_1> AND <value_2>;
+				--return the data between the values 1 and 2
+
+..Text Values 			--all the text values ate surround single quotation marks
+				--if contain an apostrophe, shoud use two single quote characters to escape, example: 'Can''t'
+				-- " != ''
+
+..SQL Logical Operators		--can be used to combine two Boolean values and return a result of true, false or null
+				--used in SELECT WHERE to combine two or more expressions
+.AND	TRUE if both expressions are TRUE
+.OR	TRUE if either expression is TRUE
+.IN	TRUE if the operand is equal to one of a list of expressions
+				--is used to compare a column with more than one value
+.NOT	Nreturns TRUE if expression is not TRUE
+.NOT IN 			--operator allows to exclude a list of specific values from the result-set
+
+.SELECT * FROM <table> WHERE <column> IN (<value_1>, <value_2>...);
+				--instead use mutiple OR, is valid use the IN condition
+
+.SELEC * FROM <table> WHERE <column> NOT IN (<value_1>, <value_2>...);
+				--exclude the same values returned in the before example
+				--instead use mutiple AND, is valid use the NOT IN condition (in a comment at sololearn)
+
+..SQL Conjunctive Operators	--when combine AND and OR logical operators in a query
+				--is used with ( ), so that the order to evaluate each condition is know
+
+.SELECT * FROM <table> WHERE <condition_a> AND (<condition_c> OR <condition_d>);
+
+
+..Arithmetic Operators		--is used to change the result-set
+.+	add.
+.-	sub.
+.*	mul.
+./	div.
+
+SELECT <columns> <column>+500 AS <nome_result-set>;
+				--return a new column salary
+
+-----------
+
+Functions
+
+..CONCAT()			--Concatenates string values
+SELECT CONCAT(<column_1>, 'whatever', <column_2>) FROM <table>;
+				--return the column_1, whatever, column_2
+				--is a function: CONCAT()
+				--return NULL if any argument is NULL
+
+
+..AS				--is used ito rename column in the result-set
+.SELECT CONCAT(<coluns>) AS <nome_result-set> FROM <Table>;
+				--return a a column named
+
+..UPPER()			--return in the result-set the data in 'UPPER CASE'
+..LOWER()			--return in the result-set the data in 'lower case'
+..SQRT()			--return in the result-set the data in square root, for each register, works at register
+..AVG()				--return in the result-set of with a avarage data of the all data in a column, works at column 
+..SUM()				--return in the result-set of with a sum of the all data in a column, works at column 
+
+...Agregação:
+..MAX()				--return the biggest value of an expression in a SELECT 
+..MIN()				--return the smallest value of an expression in a SELECT 
+..COUNT(*)			--return number of rows match the query
+
+.SELECT <colum or agregação function> FROM <tabela >GROUP BT <column>
+				--
+
+
+
+..Subsqueries			--is the use of a query inside other like:
+..exemple:
+.SELECT <columns> FROM <table> WHERE <coolumn> > (SELECT AVG(<column>) FROM <table>) ORDER BY <column> DESC/ASC;
+				--in this case return data from a table where is big than the avarege of all table, ordered by desc or asc.
+
+-----------
+
+
+..LIKE				--used in WHERE clause to search for a specified pattern in a column
+.SELECT <column> FROM <table> WHERE <column> LIKE <pattern>;
+...Simbols:
+	_	used to match any single character
+	%	used to match an arbitrary number of character (including zero characters)
+
+
+
+
+-------------------
+
+Exercicios:
+1.SELECT * FROM gafanhotos WHERE nascimento BETWEEN '2000-01-01' AND '2015-12-31';
+2.SELECT nome FROM gafanhotos WHERE profissao = 'Programador' AND sexo ='M';
+3.SELECT * FROM gafanhotos WHERE sexo = 'F' AND nacionalidade = 'Brasil' AND nome LIKE 'J%';
+4.SELECT COUNT(*) FROM gafanhotos WHERE sexo = 'F' AND altura > 1.90;
+5.SELECT DISTINCT profissao FROM gafanhotos ORDER BY profissao ASC; ?? + ?? SELECT COUNT(DISTINCT profissao) FROM gafanhotos ORDER BY ASC;
+	>> SELECT profissao, COUNT(*) FROM gafanhotos GROUP BY profissao;  !!!! OK
+6.SELECT COUNT(id) FROM gafanhotos WHERE nascimento >= '2005-01-01'; ?? + ?? SELECT COUNT(id) FROM gafanhotos WHERE nascimento >= '2005-01-01' AND sexo = 'M'; / SELECT COUNT(id) FROM gafanhotos WHERE nascimento >= '2005-01-01' AND sexo = 'F'; 
+	>> SELECT sexo, COUNT(*) FROM gafanhotos GROUP BY sexo;
+7.
+	>>SELECT nacionalidade, COUNT(*) FROM gafanhotos WHERE nacionalidade != 'Brasil' GROUP BY nacionalidade HAVING COUNT(*) > 3;
+	>> HAVING nesse exemplo serviu como forma de determinar o threshold de contagem
+8.
+	>> SELECT sexo, COUNT(*), AVG(altura) FROM gafanhotos WHERE peso > 100 GROUP BY sexo;
+
+
+
+				
+

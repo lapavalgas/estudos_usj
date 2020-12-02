@@ -1,0 +1,50 @@
+- title: 'Psicólogo e Neuropsicólogo clínico'
+  local: Clínica particular
+  sigla: Psicologia
+  time: 2016 ~ 2019  
+  status: Atual
+  resume: Desde o fim da graduação iniciei minha atividade profissão enquanto psicólogo clínico. No entanto não disponibilizo todo o tempo para essa atividade que considero delicada e depende de dedicação.
+  id: neuropsy
+  
+  topics:  
+    - title: 'Avaliação neuropsicológica'
+      sigla: 
+      time: 2017 ~ momoento
+      resume: Iniciei a avaliação neuropsicológica profissionalmente no decorrer do curso de pós-graduação para os estudos de casos clínicos. E desde então pude oficializar o início de minhas atividades. Ainda na graduação minha experiência iniciou com diferentes tipos de demência e atualmente tenho avaliado e acompanhado uma quantidade de transtornos de aprendizagem. 
+      imgs:
+        - url: ''
+          description: 
+
+        - url: ''
+          description:  
+
+        - url: ''
+          description:
+    
+    - title: 'Avaliação Psicológica'
+      sigla: 
+      time: 2016 ~ momento
+      resume: Iniciei as atividades com avaliação psicológica. A principal demanda que me chegaram foram os transtornos de aprendizagem e 
+      imgs:
+        - url: ''
+          description: 
+
+        - url: ''
+          description:  
+
+        - url: ''
+          description:
+    
+    - title: 'psicoterapia'
+      sigla: 
+      time: 2016 ~
+      resume: Iniciei as atividades com psicoterapia. A principal demanda que me chegaram foram os transtornos de aprendizagem e...
+      imgs:
+        - url: ''
+          description: 
+
+        - url: ''
+          description:  
+
+        - url: ''
+          description:

@@ -1,0 +1,48 @@
+- title: Programmer
+  description: Entusiasta da área da informática há mais de dez anos. Após concluir a formação em psicologia e iniciar as atividades profissionais interessou-se em buscar novos desafios e experiências. Iniciou, então, a graduação em Análise e Desenvolvimento de Sistemas. Ingressou, também, no mestrado profissional, tendo em vista a união das áreas da saúde e tecnologia. Possui experiências nas áreas da educação, saúde e pesquisa acadêmica, podendo contribuir na mediação de projetos que compreendam esses aspectos. Atualmente, procura inserção na área de desenvolvimento de sistemas. <br> Conhecimentos básicos em análise de requisitos, documentação, UML e prototipação. Capaz de desenvolver e implementar métodos, classes e sistemas em Java utilizando a programação orientada ao objeto e design patterns, incluindo ou não o CRUD com banco de dados em JDBC ou Hibernate com MySQL e PostgreSQL. Com habilidades iniciais no desenvolvimento de interfaces utilizando jFrame e JavaFX. Também compreende de maneira inicial as linguagens Python, JavaScript e C#, e a programação para Web utilizando HTML e CSS. 
+  paragraph-B:
+  paragraph-C:
+  projectcard:
+    - title: Agenda 2
+      technology: Java, jFrame, MySQL, JDBC
+      description: Conhecimentos básicos em análise de requisitos, documentação, UML e prototipação. Capaz de desenvolver e implementar métodos, classes e sistemas em Java utilizando a programação orientada ao objeto e design patterns, incluindo ou não o CRUD com banco de dados em JDBC ou Hibernate com MySQL e PostgreSQL. Com habilidades iniciais no desenvolvimento de interfaces utilizando jFrame e JavaFX. Também compreende de maneira inicial as linguagens Python, JavaScript e C#, e a programação para Web utilizando HTML e CSS.
+      status: Finalizado
+      imgs:
+        - url: about-me-02.jpeg
+          description: Eai gata! ;)   <3
+
+        - url: ''
+          description: 
+
+        - url: ''
+          description: 
+
+    - title: CV
+      technology: HTML, CSS, JavaScript, Jekyll
+      description: Um website pessoal para hospedar no github.io, que sirva enquanto um portfólio de minha formação e habilidades.
+      status: Andamento
+      imgs:
+        - url: ''
+          description: o
+
+        - url: ''
+          description: 
+
+        - url: ''
+          description: 
+
+    - title: Website USJ
+      technology: HTML, CSS, JavaScript, PHP, Wordpress
+      description: Bolsista operacional para remodelagem do site de acordo com as solicitações do reitor Renato Brittes e sob orientação do professor Jaime Miranda Jr.
+      status: Abandonado
+      imgs:
+        - url: ''
+          description: o
+
+        - url: ''
+          description: 
+
+        - url: ''
+          description: 
+      
+

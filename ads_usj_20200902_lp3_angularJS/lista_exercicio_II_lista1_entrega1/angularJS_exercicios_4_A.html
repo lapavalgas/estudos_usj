@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>exercicios</title>
+</head>
+
+<body>
+    <div ng-app="">
+        <div>
+            <label for="salario">Digite o salário</label>
+            <input ng-model="salario" type="number" name="salario" id="numero" value="0">
+            <label for="reajuste">Digite o percentual de reajuste</label>
+            <input ng-model="reajuste" type="number" name="reajuste" id="numero" value="0">
+            <p>O salário de {{salario}} reajusutado em {{reajuste}}% é de {{salario+((salario*reajuste)/100)}} </p>
+        </div>
+
+    </div>
+</body>
+</html>

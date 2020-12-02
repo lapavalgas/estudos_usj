@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div ng-app="myApp" ng-controller="nomesCtrl">
+
+        <p>NG Repeat:</p>
+        <ul>
+            <li ng-repeat="x in produtos | orderBy:'Produto'">
+                {{ x.Produto + ', ' + x.Preco }}
+            </li>
+        </ul>
+
+    </div>
+
+    <script>
+        angular.module('myApp', []).controller('nomesCtrl', function ($scope) {
+            $scope.produtos = [
+                { Produto: 'Farinha', Preco: '10.00' },
+                { Produto: 'Arroz', Preco: '7.00' },
+                { Produto: 'Macarrão', Preco: '7,89' }
+            ];
+        });
+    </script>
+
+</body>
+
+</html>

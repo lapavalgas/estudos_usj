@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<body ng-app="myApp">
+
+    <div>
+        <h1>Lista Completa 1</h1>
+        <ul ng-controller="nomesCtrl">
+            <li ng-repeat="nome in nomes">
+                {{nome}}
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h1>Lista Completa 2</h1>
+        <p>Metendo sobrenome Valgas em todo mundo:</p>
+        <ul ng-controller="nomesCtrl">
+            <li ng-repeat="nome in nomes">
+                {{nome | formatar}}
+            </li>
+        </ul>
+
+    </div>
+
+
+    <script>
+        var app = angular.module('myApp', []);
+        app.filter('formatar', function () {
+            return function (nome) {
+                var sobrenome = " Valgas";{}
+                return nome + sobrenome;
+            }
+        });
+
+        app.controller('nomesCtrl', function ($scope) {
+            $scope.nomes = [
+                'Carlos',
+                'Paulo',
+                'Juliana',
+                'Hebe',
+                'Pablo',
+                'Corinthias',
+                'Avai',
+                'Suzana',
+                'Fernanda'
+            ];
+        });
+
+    </script>
+</body>
+
+</html>

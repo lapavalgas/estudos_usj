@@ -1,0 +1,430 @@
+/************************************
+    Rafael Lapa Valgas
+*************************************/
+
+
+/************************************
+    Curriculum Vitae Pessoal :: V1
+*************************************/
+
+
+/************************************
+    .grid
+*************************************/
+
+
+/*
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+*/
+
+body {
+    background-color: aliceblue;
+    /*avoid user selection*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr auto auto;
+    grid-template-areas: 'h' 'm' 'f';
+    overflow: hidden;
+}
+
+.header {
+    grid-area: h;
+    margin: 3px auto;
+    margin-top: 1em;
+    padding: 5px;
+    min-width: 65%;
+    max-width: 65%;
+    min-height: 140px;
+}
+
+.main {
+    grid-area: m;
+    margin: 3px auto;
+    margin-bottom: 5px;
+    padding: 5px;
+    min-width: 65%;
+    max-width: 65%;
+}
+
+.footer {
+    grid-area: f;
+    min-width: 100%;
+    max-width: 100%;
+    background-color: dodgerblue;
+}
+
+.footer__box {
+    margin: auto;
+    padding: 5px;
+    min-width: 65%;
+    max-width: 65%;
+}
+
+
+/*
+@media screen and (min-width: 1715px) {
+    .header {
+        min-width: 60%;
+        max-width: 60%;
+    }
+    .main {
+        min-width: 60%;
+        max-width: 60%;
+    }
+    .footer {
+        min-width: 60%;
+        max-width: 60%;
+    }
+}
+*/
+
+
+/************************************
+    .logo
+*************************************/
+
+.box__logo {
+    margin: 3px;
+    padding: 5px;
+    padding-left: 0px;
+    border-bottom: 1px dashed dodgerblue;
+    /*avoid user selection*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.box__logo__content {
+    margin: 3px;
+    padding: 5px;
+    width: 100%;
+    font-family: monospace;
+    letter-spacing: 1em;
+    font-size: 2em;
+}
+
+
+/************************************
+    .menu
+*************************************/
+
+.box__menu {
+    margin-bottom: 5px;
+    display: flex;
+    font-family: monospace;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__list__link {
+    width: 6em;
+    height: 2em;
+    margin: 3px;
+    padding: 5px;
+    background-color: dodgerblue;
+}
+
+.menu__list__link:hover {
+    border-bottom: 3px solid hotpink;
+}
+
+.menu__list__link:active {
+    background-color: azure;
+}
+
+.menu__list__link--negative {
+    background-color: hotpink;
+}
+
+.menu__list__link--negative:hover {
+    border-bottom: 3px solid dodgerblue;
+}
+
+.link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding-top: 10%;
+    text-decoration: none;
+    text-align: center;
+    color: aliceblue;
+}
+
+.link:hover {
+    color: black;
+}
+
+
+/************************************
+    .box
+*************************************/
+
+.box {
+    font-family: serif;
+    font-size: 1em;
+    text-align: justify;
+    margin-bottom: 8px;
+    min-width: 420px;
+    max-width: 420px;
+    height: auto;
+}
+
+
+/************************************
+    .resume
+*************************************/
+
+.resume {
+    padding: 5px;
+    border: 1px dashed rgba(30, 143, 255, 0.020);
+    border-left: 1px dashed rgba(30, 143, 255, 0.130);
+}
+
+.resume:hover {
+    border-bottom: 1px solid dodgerblue;
+}
+
+.resume--summary {
+    border: 1px solid dodgerblue;
+    display: none;
+    background-color: rgba(30, 143, 255, 0.120);
+    /* onload() none; onclick() show/hide*/
+}
+
+
+/************************************
+    .resume__view
+*************************************/
+
+.resume__view {
+    margin: 3px;
+    padding: 3px;
+    /*avoid user selection*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.resume__view--lesser {
+    line-height: 50%;
+}
+
+.resume__view--enphasis {
+    padding: 5px;
+}
+
+.resume__view--title {
+    font-size: 1.1em;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.resume__view--local {
+    font-size: 0.85em;
+}
+
+
+/************************************
+    shadow version
+*************************************/
+
+.box--shadow {
+    /* put --shadow / replace */
+    margin: 3px;
+    padding: 5px;
+    font-family: serif;
+    font-size: 1em;
+    text-align: justify;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 8px;
+    min-width: 420px;
+    max-width: 420px;
+}
+
+.box--shadow:hover {
+    /* put --shadow / replace */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.resume--shadow {
+    /* put --shadow / replace */
+    margin: 3px;
+    padding: 5px;
+}
+
+.resume--summary--shadow {
+    /* put the class together*/
+    border: none;
+}
+
+.resume__view--title--shadow {
+    /* put the class together */
+    border-bottom: solid 1px;
+}
+
+
+/************************************
+    about version
+*************************************/
+
+.box--about {
+    /* put --about / replace */
+    margin: 3px;
+    padding: 5px;
+    font-family: serif;
+    font-size: 0.9em;
+    text-align: justify;
+    margin-bottom: 8px;
+    height: auto;
+}
+
+.resume--about {
+    /* put the class together */
+    border: none;
+}
+
+.resume--about:hover {
+    border: none;
+}
+
+.resume__view--title--about {
+    /* put --about / replace */
+    font-size: 2em;
+    font-family: monospace;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
+
+.resume__view--about {
+    /* put the class together */
+    font-size: 1.15em;
+    line-height: 1.15em;
+}
+
+
+/************************************
+    footer
+*************************************/
+
+
+/************************************
+    .contact
+*************************************/
+
+.contact {
+    margin: 3px;
+    padding: 5px;
+    display: flex;
+}
+
+.contact__box {
+    margin: 3px auto;
+    padding: 5px;
+    display: flex;
+}
+
+.contact__box>a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.contact__box--img {
+    min-width: 24px;
+    min-height: 24px;
+    max-width: 24px;
+    max-height: 24px;
+    overflow: hidden;
+}
+
+.contact__box--img>img {
+    min-width: 24px;
+    min-height: 24px;
+    max-width: 24px;
+    max-height: 24px;
+}
+
+.contact__box--title {
+    padding-left: 8px;
+    padding-top: 8px;
+    text-decoration: none;
+    font-family: monospace;
+}
+
+.contact__box--title>a:hover {
+    color: black;
+}
+
+.box__local {
+    margin: 3px auto;
+    padding-top: 0.75em;
+    display: flex;
+    justify-content: space-between;
+    font-family: monospace;
+    color: aliceblue;
+    border-top: 1px dashed black;
+}
+
+.box__local>p:hover {
+    color: black;
+}
+
+
+/************************************
+    main grid
+*************************************/
+
+.all__main__down {
+    display: flex;
+}
+
+.academic,
+.professional {
+    margin: 3px;
+    padding: 5px;
+    display: block;
+    max-width: 50%;
+}
+
+.academic--title,
+.professional--title {
+    padding-left: 0.55em;
+    padding-bottom: 8px;
+    letter-spacing: 0.2em;
+    font-family: monospace;
+    font-size: 1.5em;
+    font-weight: bolder;
+    border-bottom: 1px dashed black;
+}
+
+
+/************************************
+    media
+*************************************/

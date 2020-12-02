@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<body>
+
+    <div ng-app="minhaApp" ng-controller="meuCtrl">
+        <h1>{{firstname}}</h1>
+        <p>Clique no botão</p>
+        <button ng-click="changeName()"> troca nome </button>
+    </div>
+
+    <script>
+        var app = angular.module('minhaApp', []);
+        app.controller('meuCtrl', function ($scope) {
+            $scope.firstname = "John";
+            $scope.changeName = function () {
+                $scope.firstname === "Nelly" ? $scope.firstname = "John" : $scope.firstname = "Nelly";
+            }
+        });
+    </script>
+
+
+
+</body>
+
+</html>

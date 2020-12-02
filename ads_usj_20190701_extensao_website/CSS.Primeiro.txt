@@ -1,0 +1,125 @@
+#masthead{
+	background: white; /*rgba(67,87,127,0.78); #b4b4b4*/ 
+}
+
+.top-news-title{
+	background: #179bd7;
+}
+
+.top-news-title::after{
+	    border-left: none;
+}
+
+#breadcrumb{
+	display: none;
+}
+
+.site-info{
+	color: #031358;
+	pointer-events: none;
+}
+
+#tophead{
+	box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.23);
+}
+
+#top-nav ul ul {
+	box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.23)
+}
+
+.main-navigation ul ul{
+	box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.23)
+}
+
+#main-nav{
+	box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.23) 
+}
+
+/*News and Events*/
+.home-section-news-and-events{
+	background-color: transparent;
+	background-image: linear-gradient(180deg, #f2f2f2 0%, #ffffff 100%);
+	box-shadow: 0px -1px 4px 1px rgba(0,0,0,0.2);
+  transition: background 0s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.home-section-news-and-events .news-content{
+	background-color: rgba(255,255,255,0.45);
+}
+
+.home-section-news-and-events .event-post {
+	background-color: rgba(255,255,255,0.45);
+}
+
+/*News and Events*/
+
+/*lastnews*/
+.home-section-latest-news {
+	background-color: transparent;
+	background-image: linear-gradient(180deg, #f2f2f2 0%, #ffffff 100%);
+	box-shadow: 0px -1px 4px 1px rgba(0,0,0,0.2);
+  transition: background 0s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+} 
+.home-section-news-and-events .news-content{
+	background-color: rgba(255,255,255,0.45);
+}
+.home-section-news-and-events .event-post {
+	background-color: rgba(255,255,255,0.45);
+    /* Para usar com News and Events
+     * background-color: white;
+     * border-style: dashed; 
+     * border-width: 1px 0px 1px 0px; 
+     * border-color: rgba(0,0,0,0.09); 
+     * transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; */
+}
+/*lastnews*/
+
+/*@media*/
+
+
+
+#content{
+	padding: 0px;	
+	background: white/ /*#031358;*/
+}
+
+#primary article.hentry{
+	background: none;
+	box-shadow: none;
+	padding: 0px;
+	border-bottom: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+footer.entry-footer{
+	margin-bottom:0px;
+}
+
+#colophon{
+	box-shadow: 0px -3px 4px 1px rgba(0,0,0,0.2)
+}
+
+#colophon a{
+		color: #031358;
+		pointer-events: none;
+}
+
+.mobile-nav-wrap{
+	background: #179bd7;
+} 
+
+#mobile-trigger i{
+	background-color: white;
+	color: #179bd7;
+}
+
+#mobile-trigger2 i{
+	background-color: #179bd7;
+}
+
+body.three-columns-enabled #primary, body.three-columns-enabled #content .sidebar, body #content #primary, body #content .sidebar{
+	border-bottom:0px;
+	margin-bottom:0px;
+	padding-bottom:0px;
+}

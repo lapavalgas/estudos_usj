@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">atividade01</string>
+    <string name="textViewTitle">Digite um numero e veja o anterior!</string>
+    <string name="inputDigito">Digite aqui...</string>
+    <string name="textViewResult" />
+    <string name="btnVerificar">VERIFICAR</string>
+</resources>

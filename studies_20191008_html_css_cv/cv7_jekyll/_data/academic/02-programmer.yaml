@@ -1,0 +1,22 @@
+- title: 'Graduação em Análise e Desenvolvimento de Sistemas'
+  local: Centro Universitário Municipal de São José
+  sigla: USJ
+  time: 2017 ~ 2021 
+  status: Em andamento.
+  resume: ...Graduação tecnológica em Análise e Desenvolvimento de Sistemas... Tendo concluído minha formação inicial e iniciado minha atuação profissional em psicologia e neuropsicologia, senti que era pertinente retomar a antigas motivações de minha infancia e adolescencia ofuscadas pelo sistema de vestibular. Assim tive oportunidade de ingressar em Licenciatura em Informática de ensino a distância da Universidade do Estado de Santa Catarina / UDESC e na sequência transferir para o curso presencial de graduação tecnológica em Análise e Desenvolvimento de Sistemas do Centro Universitário Municipal de São José / USJ. Atualmente está em curso.
+  id: programmer
+  
+  topics:  
+    - title: 'Extensão reestruturação do site do Centro Universitário Municipal de São José'
+      sigla: USJ
+      time: 2015 ~2016
+      resume: Responsável operacional para reestruturação do site do USJ através da manipulação do layout através das tecnologias HTML, CSS, JavaScript, PHP e a plataforma CMMS wordpress. Sob orientação do professor Jaime Miranda Jr.
+      imgs:
+        - url: ''
+          description: 
+
+        - url: ''
+          description:  
+
+        - url: ''
+          description:

@@ -1,0 +1,53 @@
+<!-- topic -->
+
+<section class="detail__topics">
+    
+    <!-- topic content -->
+
+    <div class="detail__topics__view detail__topics__view--title ">
+
+        <h6>{{topics.title}}</h6>
+
+    </div>
+
+    <div class="detail__topics__view detail__topics__view--data">
+
+        <p>{{topics.time}}</p>
+
+    </div>
+
+    <div class="detail__topics__view detail__topics__view--status">
+
+        <p>{{topics.resume}}</p>
+
+    </div>
+
+    <!-- /topic content -->
+
+    <!-- imgs -->
+
+    <section class="topic__img">
+
+         <!-- FOR LOOP LENGTH IMG -->
+
+        {% for imgs in topics.imgs %}
+
+            {% if imgs.url != '' %}
+
+                {% include c3-imgs.html imgs="imgs" %}
+
+            {% endif %}
+        
+        {% endfor %}
+        
+        <!-- ENDFOR LOOP LENGTH IMG -->
+
+    </section>
+
+    <!-- /imgs -->
+
+</section>
+
+
+
+<!-- /topic -->
