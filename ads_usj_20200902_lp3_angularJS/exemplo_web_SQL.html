@@ -1,0 +1,109 @@
+<html>
+<head>
+
+<script>
+
+if (window.openDatabase) {
+        var mydb = openDatabase("cars_db", "0.1", "A Database of Cars I Like", 1024 * 1024);
+    mydb.transaction(function (t) {
+        t.executeSql("CREATE TABLE IF NOT EXISTS cars (id INTEGER PRIMARY KEY ASC, make TEXT, model TEXT)");
+    });
+
+} else {
+    alert("WebSQL não suportado no seu Browser!");
+}
+
+
+function updateCarList(transaction, results) {
+   
+    var listitems = "";
+    var listholder = document.getElementById("carlist");
+
+    
+    listholder.innerHTML = "";
+
+    var i;
+   
+    for (i = 0; i < results.rows.length; i++) {
+      
+        var row = results.rows.item(i);
+
+        listholder.innerHTML += "<li>" + row.make + " - " + row.model + " (<a href='javascript:void(0);' onclick='deleteCar(" + row.id + ");'>Delete Car</a>)";
+    }
+
+}
+
+
+
+function outputCars() {
+  
+    if (mydb) {
+               mydb.transaction(function (t) {
+            t.executeSql("SELECT * FROM cars", [], updateCarList);
+        });
+    } else {
+        alert("dWebSQL não suportado no seu Browser!");
+    }
+}
+
+
+
+function addCar() {
+    
+    if (mydb) {
+        
+        var make = document.getElementById("carmake").value;
+        var model = document.getElementById("carmodel").value;
+    
+        if (make !== "" && model !== "") {
+                mydb.transaction(function (t) {
+                t.executeSql("INSERT INTO cars (make, model) VALUES (?, ?)", [make, model]);
+                outputCars();
+            });
+        } else {
+            alert("Não consegui inserir um novo carro");
+        }
+    } else {
+        alert("dWebSQL não suportado no seu Browser!");
+    }
+}
+
+
+function deleteCar(id) {
+    
+    if (mydb) {
+            mydb.transaction(function (t) {
+            t.executeSql("DELETE FROM cars WHERE id=?", [id], outputCars);
+        });
+    } else {
+        alert("db not found, your browser does not support web sql!");
+    }
+}
+outputCars();
+</script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+</head>
+<body>
+<h1>WebSQL Example</h1>
+
+<div id="controls">
+    <p>Adicionar Carros</p>
+    <label>Marca:</label>
+    <input type="text" id="carmake" />
+    <br />
+    <label>Modelo:</label>
+    <input type="text" id="carmodel" />
+    <br />
+    <button type="button" id="addcar" onclick="addCar();">Adicionar </button>
+</div>
+<div id="carlistholder">
+     <h3>Lista de Carros</h3>
+
+    <ul id="carlist"></ul>
+</div>
+
+</body>
+</html>
